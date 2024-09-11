@@ -1,0 +1,533 @@
+{
+  "account_pages": {
+    "primary_heading": "Mon Compte",
+    "navigation": {
+      "orders": "Commandes",
+      "profile": "Profil",
+      "addresses": "Adresses",
+      "logout": "Se déconnecter"
+    },
+    "orders_page": {
+      "primary_heading": "Commandes",
+      "primary_order_type": "En cours",
+      "secondary_order_type": "Passée",
+      "empty_orders": {
+        "primary_heading": "Vous n'avez pas de commande",
+        "primary_text": "Vous nous avez beaucoup manqué.",
+        "button_label": "Tous les produits"
+      },
+      "order_line_headings": {
+        "primary_heading": "Référence",
+        "secondary_heading": "Date",
+        "tertiary_heading": "Prix",
+        "fourth_heading": "Status"
+      },
+      "order_line": {
+        "primary_text": "Commande"
+      },
+      "order_line_item_headings": {
+        "primary_heading": "Nom",
+        "secondary_heading": "Prix",
+        "tertiary_heading": "Quantité",
+        "fourth_heading": "Total"
+      },
+      "order_status": {
+        "not_fulfilled": "Non traitée",
+        "partially_fulfilled": "Partiellement traitée",
+        "fulfilled": "Traitée",
+        "partially_shipped": "Partiellement expédiée",
+        "shipped": "Expédiée",
+        "partially_returned": "Partiellement retournée",
+        "returned": "Retournée",
+        "canceled": "Annulée"
+      }
+    },
+    "profile_page": {
+      "update_profile_form": {
+        "primary_heading": "Profil",
+        "success": "Profil mis à jour avec succès !",
+        "errors": {
+          "error": "Une erreur s'est produite. Veuillez réessayer."
+        }
+      },
+      "update_password_form": {
+        "primary_heading": "Mot de passe",
+        "success": "Votre mot de passe à été mis à jour !",
+        "errors": {
+          "error": "Une erreur s'est produite. Veuillez réessayer.",
+          "password_match": "Les mots de passe ne correspondent pas !"
+        }
+      },
+      "button_submit": "Mettre à jour"
+    },
+    "addresses_page": {
+      "primary_heading": "Adresses",
+      "empty_addresses": "Vous n'avez pas d'adresses enregistrées",
+      "create_address_form": {
+        "button_submit": "Ajouter l'adresse",
+        "error": "Erreur lors de la création de l'adresse",
+        "success": "Votre addresse à été ajoutée avec succès !"
+      },
+      "update_address_form": {
+        "button_submit": "Modifier l'adresse",
+        "error": "Erreur lors de la modification de l'adresse",
+        "success": "Votre addresse à été modifiée avec succès !"
+      },
+      "delete_address_modal": {
+        "primary_heading": "Êtes vous sûr de vouloir supprimer l'adresse ?",
+        "error": "Erreur lors de la suppression de l'adresse",
+        "success": "L'adresse a été supprimée avec succès !"
+      }
+    }
+  },
+  "auth_pages": {
+    "auth_page_container": {
+      "login": {
+        "label": "Vous n'avez pas de compte ?",
+        "link": "S'inscrire"
+      },
+      "register": {
+        "label": "Vous avez déjà un compte ?",
+        "link": "Se connecter"
+      },
+      "recover_password": {
+        "label": "Retour à la connexion"
+      },
+      "reset_password": {
+        "label": "Retour à la connexion"
+      }
+    },
+    "register_page": {
+      "register_form": {
+        "primary_heading": "Content de vous revoir!",
+        "primary_text": "Vous nous avez beaucoup manqué.",
+        "button_label": "S'inscrire"
+      }
+    },
+    "login_page": {
+      "login_form": {
+        "primary_heading": "Connexion",
+        "button_label": "Se connecter",
+        "forgotten_password": "Mot de passé oublié ?"
+      }
+    },
+    "recover_password_page": {
+      "recover_password_form": {
+        "primary_heading": "Mot de passe oublié?",
+        "primary_text": "Vous nous avez beaucoup manqué.",
+        "button_label": "Envoyer les instructions",
+        "success": "Email envoyé avec succès !"
+      }
+    },
+    "reset_password_page": {
+      "reset_password_form": {
+        "primary_heading": "Réinitialiser le mot de passe",
+        "primary_text": "Vous nous avez beaucoup manqué.",
+        "button_label": "Réinitialiser le mot de passe",
+        "success": "Votre mot de passe à été réinitialisé !",
+        "missing_token": "Le token est manquant"
+      }
+    },
+    "errors": {
+      "error": "Une erreur s'est produite. Veuillez réessayer.",
+      "password_match": "Les mots de passe ne correspondent pas !"
+    }
+  },
+  "cart": {
+    "primary_heading": "Votre panier",
+    "shipping_delivery": "Livraison prévue le",
+    "empty_cart": {
+      "primary_heading": "Votre panier est vide."
+    },
+    "products_upsells": {
+      "primary_heading": "Souvent achetés ensemble."
+    },
+    "checkout_actions": {
+      "sub_total": "Sous-total ",
+      "savings": "Économies",
+      "shipping": "Livraison",
+      "free": "Gratuite",
+      "total": "Total",
+      "confirm_order": "Passer à la caisse -"
+    }
+  },
+  "checkout_page": {
+    "header": {
+      "back": "Retour à la boutique"
+    },
+    "summary": {
+      "primary_heading": "Récapitulatif"
+    },
+    "shipping": {
+      "primary_heading": "Livraison",
+      "badge": "Recommandée",
+      "delivery": "Livraison estimée le {{shippingDelay}}",
+      "shipping_free": "GRATUITE",
+      "empty": {
+        "primary_text": "Ajoutez un article au panier",
+        "secondary_text": "Pas de livraison"
+      }
+    },
+    "contact": {
+      "primary_heading": "Détails",
+      "labels": {
+        "email": "E-mail",
+        "phone": "Téléphone",
+        "firstname": "Prénom",
+        "lastname": "Nom",
+        "address": "Adresse",
+        "city": "Ville",
+        "province": "Province",
+        "zip": "Code postal",
+        "country": "Pays"
+      }
+    },
+    "payments": {
+      "primary_heading": "Paiement",
+      "empty": {
+        "primary_text": "Vous y êtes presque ! Assurez-vous de bien remplir tous les détails de votre commande. Cela dévoilera vos options de paiement disponibles."
+      }
+    },
+    "upsell": {
+      "primary_heading": "Recommandé pour vous"
+    },
+    "discount": {
+      "add_discount": "Ajouter un code de réduction",
+      "label": "Code de réduction",
+      "button_submit": "Appliquer la réduction"
+    },
+    "total": {
+      "original_price": "Prix original",
+      "saving": "Vos économies",
+      "shipping": "Livraison",
+      "sub_total": "Sous-total",
+      "total": "Total"
+    },
+    "submit": {
+      "label": "Finaliser ma Commande"
+    },
+    "trust_factors": {
+      "returns": {
+        "icon": "arrow-rotate-left",
+        "heading": "Retour facile"
+      },
+      "satisfaction": {
+        "icon": "trophy",
+        "heading": "Satisfaction garantie"
+      },
+      "secure_payment": {
+        "icon": "lock",
+        "heading": "Paiement sécurisé"
+      }
+    },
+    "error": {
+      "missing_contact_info": "Certaines informations de contact sont manquantes. Veuillez vérifier et compléter tous les champs requis.",
+      "missing_payment_info": "Certaines informations de paiement sont manquantes. Veuillez vérifier et compléter tous les champs requis.",
+      "payment_failed": "Impossible d'effectuer le paiement. Vérifiez vos détails ou changez de moyen de paiement.",
+      "unknown": "Une erreur inattendue s'est produite. Veuillez réessayer."
+    },
+    "overlay": {
+      "wait": "Un peu de patience...",
+      "message": "Votre commande est en cours de traitement. Ne cliquez pas sur retour ou actualiser jusqu'à ce que votre commande soit terminée."
+    }
+  },
+  "checkout_confirmation_page": {
+    "header": {
+      "heading": "Hourra ! Votre commande est en route !",
+      "description": "Merci pour votre commande ! Nous tenons à confirmer que nous l'avons bien reçue et un e-mail détaillant votre achat a été envoyé à <span>{{ emailAddress }}</span>"
+    },
+    "details": {
+      "heading": "Détails de la commande",
+      "total": "Montant total",
+      "order_date": "Date de la commande"
+    },
+    "shipping": {
+      "heading": "Détails de livraison"
+    },
+    "estimated_delivery_date_label": "Livraison estimée",
+    "button": "Continuer vos achats"
+  },
+  "checkout_error_page": {
+    "heading": "Oups, on a eu un hic !",
+    "content": "Il semble qu'il y ait eu un souci avec votre commande. Nous vous invitons à réessayer. Si ce problème persiste, pas de panique, envoyez-nous un petit message à {{ emailAddress }}.",
+    "button": "Retentez Votre Chance"
+  },
+  "contact_form": {
+    "button_label": "Envoyer",
+    "success": "Notre équipe traitera votre demande sous peu. Merci pour votre patience et nous sommes impatients de vous parler.",
+    "error": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "cookies_banner": {
+    "header": {
+      "primary_heading": "Gérer mes cookies"
+    },
+    "footer": {
+      "accept_all": "J'accepte tout",
+      "button_choose": "Je choisis",
+      "button_deny": "Non merci"
+    },
+    "consent_banner": {
+      "intro": "Nous aimerions utiliser des cookies pour améliorer votre expérience lors de votre visite sur notre site Web.",
+      "engagement_label": "Notre engagement en matière de confidentialité"
+    },
+    "consent_choice": {
+      "check_necessary": "Cookies nécessaires",
+      "check_necessary_text": "Nous utilisons ces cookies pour assurer le bon fonctionnement de notre site Web.",
+      "check_performances": "Cookies de performance",
+      "check_performances_text": "Nous utilisons ces cookies pour assurer le bon fonctionnement de notre site Web.",
+      "check_analysis": "Cookies d'analyse",
+      "check_analysis_text": "Nous utilisons ces cookies pour vous fournir des publicités personnalisées sur notre site Web."
+    }
+  },
+  "dynamic_page_titles": {
+    "first_title": "\uD83D\uDCA5 NE MANQUEZ PAS NOS OFFRES QUOTIDIENNES",
+    "second_title": "\uD83C\uDF89 PROMOTIONS EXCLUSIVES HEBDOMADAIRES"
+  },
+  "express_configurator": {
+    "details": {
+      "reviews": "basé sur {{reviewCount}} avis",
+      "error": "Aucune option n'est sélectionnée.",
+      "success": "Produit ajouté au panier avec succès !"
+    }
+  },
+  "footer": {
+    "title_categories": "Catégories",
+    "title_order": "Votre commande",
+    "legal_privacy": "Confidentialité",
+    "legal_sales": "Ventes et retours",
+    "legal_shipping": "Livraison et retours",
+    "legal_terms_of_sales": "Conditions de vente",
+    "legal_notice": "Avis légal"
+  },
+  "help_page": {
+    "heading": "Besoin d'aide ? Nous sommes là pour vous",
+    "help_questions": {
+      "categories": {
+        "heading": "Parcourir par catégorie"
+      }
+    },
+    "help_contact_form": {
+      "heading": "Votre avis nous aide à nous améliorer",
+      "text": "Nous aimerions avoir de vos nouvelles. Envoyez-nous un message, et nous vous répondrons dans un délai raisonnable."
+    },
+    "help_contact": {
+      "heading": "Autres moyens pour\nnous joindre",
+      "text": "Pas de soucis, nous sommes là pour vous aider.\nNous comprenons que parfois, vous avez besoin d'un peu plus.",
+      "email": {
+        "heading": "Envoyez-nous un e-mail"
+      },
+      "chat": {
+        "heading": "Chat en direct",
+        "text": "Notre équipe de support"
+      }
+    }
+  },
+  "nav": {
+    "about": "Notre histoire",
+    "help": "Aide & Contact"
+  },
+  "order_links": {
+    "shipping": "Livraison",
+    "returns": "Retours",
+    "payments": "Paiements",
+    "other": "Autre"
+  },
+  "products_page": {
+    "heading": "Nos produits"
+  },
+  "product_page": {
+    "loading": {
+      "title": "Accrochez-vous...",
+      "content": "Votre expérience sur mesure est en cours de préparation. Un petit instant de patience, ça arrive !"
+    },
+    "add_to_cart_banner": {
+      "delivery_date": "Commandez aujourd'hui et soyez livré le "
+    },
+    "product_hero_overview_header": {
+      "best_seller": "Best-seller",
+      "shipping_free": "Livraison gratuite",
+      "earn": "ÉCONOMISEZ",
+      "review": "basé sur {{reviewCount}} avis"
+    },
+    "product_hero_overview_footer": {
+      "delivery_date": "Commandez aujourd'hui et soyez livré le "
+    },
+    "recently_viewed_products_carousel": {
+      "heading": "Produits récemment consultés"
+    },
+    "reviews": {
+      "based_on": "basé sur {{reviewsCount}} avis",
+      "item_fit": "Comment l'article vous allait-il ?",
+      "recommend_product": "Je recommande ce produit",
+      "recommend_product_percentage": "{{percentage}}% recommanderait ce produit",
+      "purchased_size": "Taille achetée",
+      "usual_size": "Taille habituelle",
+      "write_review": "Écrire un avis",
+      "small": "Petit",
+      "just_right": "Juste parfait",
+      "big": "Grand"
+    },
+    "size": {
+      "height_imperial": "Taille en pieds/pouces",
+      "height_metric": "Taille en cm",
+      "height_imperial_label": "Pieds/pouces",
+      "height_metric_label": "CM"
+    }
+  },
+  "trust_factors": {
+    "default": {
+      "fast_delivery": {
+        "icon": "truck-fast",
+        "heading": "Livraison rapide",
+        "description": "Commandez maintenant et recevez vos achats en un clin d'œil."
+      },
+      "secure_payment": {
+        "icon": "shield-check",
+        "heading": "Paiement sécurisé",
+        "description": "Nos transactions sont protégées pour une expérience d'achat sans souci."
+      },
+      "satisfaction": {
+        "icon": "repeat",
+        "heading": "Achetez en toute confiance",
+        "description": "Nous nous engageons envers votre satisfaction. Si vous n'êtes pas satisfait, nous rembourserons."
+      },
+      "customer_service": {
+        "icon": "headset",
+        "heading": "Service client",
+        "description": "Pour toutes questions ou assistance, nous sommes toujours prêts à vous aider."
+      }
+    },
+    "product": {
+      "secure_payment": {
+        "icon": "lock",
+        "description": "Paiement 100% sécurisé"
+      },
+      "confidence": {
+        "icon": "list-check",
+        "description": "Achetez en toute confiance"
+      },
+      "satisfaction": {
+        "icon": "arrow-rotate-left",
+        "description": "Satisfaction garantie"
+      }
+    }
+  },
+  "store_reviews": {
+    "heading": "Ce que disent nos 1 000+ clients",
+    "global_rating": "Une note de <strong>{{rating}}</strong> sur 5 basée sur <span>{{reviewCount}} avis</span>. Nos derniers avis."
+  },
+  "size_guide_info": {
+    "info_heading": "Trouvez la taille parfaite avec notre guide des tailles facile à utiliser.",
+    "modal_heading": "Guide des tailles"
+  },
+  "common": {
+    "and": "et",
+    "add_to_cart": "Ajouter au panier",
+    "add": "Ajouter",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "products": "Produits",
+    "product": "Produit",
+    "new": "NOUVEAU",
+    "see_all": "Tout voir",
+    "with": "Avec",
+    "relative_time_day": "Il y a {{value}} jour",
+    "relative_time_days": "Il y a {{value}} jours",
+    "relative_time_hour": "Il y a {{value}} heure",
+    "relative_time_hours": "Il y a {{value}} heures",
+    "relative_time_minute": "Il y a {{value}} minute",
+    "relative_time_minutes": "Il y a {{value}} minutes",
+    "out_of_stock": "Stock épuisé",
+    "klarna_message": "4 paiements sans intérêt de "
+  },
+  "options": {
+    "color": "Choisissez votre couleur préférée",
+    "size": "Quelle est votre taille parfaite ?"
+  },
+  "placeholder": {
+    "firstname": "Prénom",
+    "lastname": "Nom de famille",
+    "email_address": "Adresse e-mail",
+    "phone_number": "Numéro de téléphone",
+    "message": "Message",
+    "password": "Mot de passe",
+    "password_confirmation": "Confirmation du mot de passe",
+    "search": "Rechercher..."
+  },
+  "validation": {
+    "invalid_email": "Cette adresse e-mail est invalide",
+    "invalid_length": "Le texte est trop court",
+    "is_required": "Ce champ est obligatoire",
+    "invalid_discount_code": "Code de réduction invalide",
+    "field_is_required": "{{field}} est obligatoire",
+    "fields_are_required": "{{fields}} sont obligatoires",
+    "password_match": "Les mots de passe ne correspondent pas"
+  },
+  "opengraph": {
+    "homepage": {
+      "description": "Faites vos achats maintenant sur {{ storeName }} et économisez gros sur vos achats en ligne",
+      "trust_factors": {
+        "first": "Livraison rapide",
+        "second": "Paiement sécurisé",
+        "third": "Satisfaction garantie",
+        "fourth": "Service client"
+      }
+    }
+  },
+  "shop_review_status": {
+    "redirected": "Redirigé",
+    "verified": "Vérifié"
+  },
+  "newsletter_form": {
+    "field_label": "Votre e-mail",
+    "button_label": "S'abonner",
+    "success": "Inscription réussie ! Du contenu passionnant arrive bientôt.",
+    "error": "Échec de l'inscription. Veuillez réessayer ultérieurement."
+  },
+  "block_shop_rating": {
+    "primary_text": "Excellent",
+    "secondary_text": "avis de"
+  },
+  "country": {
+    "at": "Autriche",
+    "au": "Australie",
+    "be": "Belgique",
+    "ca": "Canada",
+    "ch": "Suisse",
+    "cs": "République Tchèque",
+    "de": "Allemagne",
+    "es": "Espagne",
+    "fr": "France",
+    "gb": "Royaume-Uni",
+    "it": "Italie",
+    "lu": "Luxembourg",
+    "nl": "Pays-Bas",
+    "sv": "Suède",
+    "us": "États-Unis",
+    "za": "Afrique du Sud"
+  },
+  "language": {
+    "de-at": "Autriche",
+    "de-ch": "Suisse (Allemand)",
+    "de-de": "Allemagne",
+    "de-lu": "Luxembourg (Allemand)",
+    "cs-cz": "Tchèque",
+    "en-au": "Australie",
+    "en-ca": "Canada (Anglais)",
+    "en-gb": "Royaume-Uni",
+    "en-us": "États-Unis",
+    "en-za": "Afrique du Sud",
+    "es-es": "Espagne",
+    "fr-ca": "Canada (Français)",
+    "fr-be": "Belgique (Français)",
+    "fr-ch": "Suisse (Français)",
+    "fr-fr": "France",
+    "fr-lu": "Luxembourg (Français)",
+    "it-ch": "Suisse (Italien)",
+    "it-it": "Italie",
+    "nl-be": "Belgique (Néerlandais)",
+    "nl-nl": "Pays-Bas",
+    "sv-se": "Suédois"
+  }
+}
