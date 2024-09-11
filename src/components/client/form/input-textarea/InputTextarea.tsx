@@ -1,10 +1,10 @@
-import { AdditionalStyle } from '@nebula/style';
-import clsx from 'clsx';
 import { forwardRef } from 'react';
+import clsx from 'clsx';
 import { InputAnatomy } from '../_shared/anatomy';
 import { InputProps } from '../_shared/props';
 import { inputStyle, invalidClassName } from '../_shared/style';
 import { InputContainer } from '../input-container/InputContainer';
+import { AdditionalStyle } from '../../../../style/types/additional-style';
 
 export type Props = InputProps<HTMLTextAreaElement> & {
   rows?: number;
