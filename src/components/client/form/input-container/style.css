@@ -1,0 +1,30 @@
+.floating-label {
+    position: relative;
+}
+
+.floating-label:focus-within > label {
+    transform: translateY(-8.5px) scale(0.92);
+    padding-left: 1px;
+}
+
+.floating-label:focus-within > input,
+.floating-label:focus-within > select {
+    padding-top: 16px;
+}
+
+.floating-label > input:not(:placeholder-shown),
+.floating-label > select:not(:placeholder-shown) {
+    padding-top: 16px;
+}
+
+.floating-label > input:not(:placeholder-shown) + label,
+.floating-label > select:not(:placeholder-shown) + label {
+    transform: translateY(-8.5px) scale(0.92);
+    padding-left: 1px;
+}
+
+.floating-label > textarea:not(:placeholder-shown) + label,
+.floating-label > select:not(:placeholder-shown) + label {
+    transform: translateY(-8.5px) scale(0.92);
+    padding-left: 1px;
+}

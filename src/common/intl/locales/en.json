@@ -1,0 +1,533 @@
+{
+  "account_pages": {
+    "primary_heading": "My Account",
+    "navigation": {
+      "orders": "Orders",
+      "profile": "Profile",
+      "addresses": "Addresses",
+      "logout": "Log out"
+    },
+    "orders_page": {
+      "primary_heading": "Orders",
+      "primary_order_type": "In progress",
+      "secondary_order_type": "Past",
+      "empty_orders": {
+        "primary_heading": "No orders here",
+        "primary_text": "We've missed you a lot.",
+        "button_label": "Shop All"
+      },
+      "order_line_headings": {
+        "primary_heading": "Reference",
+        "secondary_heading": "Date",
+        "tertiary_heading": "Price",
+        "fourth_heading": "Status"
+      },
+      "order_line": {
+        "primary_text": "Order"
+      },
+      "order_line_item_headings": {
+        "primary_heading": "Name",
+        "secondary_heading": "Price",
+        "tertiary_heading": "Quantity",
+        "fourth_heading": "Total"
+      },
+      "order_status": {
+        "not_fulfilled": "Not Fulfilled",
+        "partially_fulfilled": "Partially Fulfilled",
+        "fulfilled": "Fulfilled",
+        "partially_shipped": "Partially Shipped",
+        "shipped": "Shipped",
+        "partially_returned": "Partially Returned",
+        "returned": "Returned",
+        "canceled": "Canceled"
+      }
+    },
+    "profile_page": {
+      "update_profile_form": {
+        "primary_heading": "Profile",
+        "success": "Profile successfully updated !",
+        "errors": {
+          "error": "An error occurred. Please retry."
+        }
+      },
+      "update_password_form": {
+        "primary_heading": "Password",
+        "success": "Password successfully updated !",
+        "errors": {
+          "error": "An error occurred. Please retry.",
+          "password_match": "Passwords doesn't match !"
+        }
+      },
+      "button_submit": "Update"
+    },
+    "addresses_page": {
+      "primary_heading": "Addresses",
+      "empty_addresses": "You don't have any remembered addresses on file.",
+      "create_address_form": {
+        "button_submit": "Add Address",
+        "error": "Error when creating address",
+        "success": "Your address has been successfully added !"
+      },
+      "update_address_form": {
+        "button_submit": "Update Address",
+        "error": "Error modifying address",
+        "success": "Your address has been successfully modified !"
+      },
+      "delete_address_modal": {
+        "primary_heading": "Are you sure you want to delete the address ?",
+        "error": "Error deleting address",
+        "success": "The address has been successfully deleted !"
+      }
+    }
+  },
+  "auth_pages": {
+    "auth_page_container": {
+      "login": {
+        "label": "Don’t have an account?",
+        "link": "Sign Up"
+      },
+      "register": {
+        "label": "Already have an account?",
+        "link": "Sign In"
+      },
+      "recover_password": {
+        "label": "Back to login"
+      },
+      "reset_password": {
+        "label": "Back to login"
+      }
+    },
+    "register_page": {
+      "register_form": {
+        "primary_heading": "Welcome back!",
+        "primary_text": "We've missed you a lot.",
+        "button_label": "Register"
+      }
+    },
+    "login_page": {
+      "login_form": {
+        "primary_heading": "Login",
+        "button_label": "Login",
+        "forgotten_password": "Forgot your password ?"
+      }
+    },
+    "recover_password_page": {
+      "recover_password_form": {
+        "primary_heading": "Password Forgotten?",
+        "primary_text": "We've missed you a lot.",
+        "button_label": "Send Instructions",
+        "success": "Email successfully send !"
+      }
+    },
+    "reset_password_page": {
+      "reset_password_form": {
+        "primary_heading": "Reset Password",
+        "primary_text": "We've missed you a lot.",
+        "button_label": "Reset Password",
+        "success": "Your password has been reset !",
+        "missing_token": "The token is missing"
+      }
+    },
+    "errors": {
+      "error": "An error occurred. Please retry.",
+      "password_match": "Passwords doesn't match !"
+    }
+  },
+  "cart": {
+    "primary_heading": "Your basket",
+    "shipping_delivery": "Expected delivery on",
+    "empty_cart": {
+      "primary_heading": "Your basket is empty."
+    },
+    "products_upsells": {
+      "primary_heading": "Frequently bought together."
+    },
+    "checkout_actions": {
+      "sub_total": "Subtotal ",
+      "savings": "Savings",
+      "shipping": "Delivery",
+      "free": "Free",
+      "total": "Total",
+      "confirm_order": "Proceed to checkout -"
+    }
+  },
+  "checkout_page": {
+    "header": {
+      "back": "Back to store"
+    },
+    "summary": {
+      "primary_heading": "Summary"
+    },
+    "shipping": {
+      "primary_heading": "Shipping",
+      "badge": "Recommended",
+      "delivery": "Estimated delivery on {{ shippingDelay }}",
+      "shipping_free": "FREE",
+      "empty": {
+        "primary_text": "Add item to cart",
+        "secondary_text": "No shipping"
+      }
+    },
+    "contact": {
+      "primary_heading": "Details",
+      "labels": {
+        "email": "Email",
+        "phone": "Phone",
+        "firstname": "Firstname",
+        "lastname": "Lastname",
+        "address": "Address",
+        "city": "City",
+        "province": "Province",
+        "zip": "Zip",
+        "country": "Country"
+      }
+    },
+    "payments": {
+      "primary_heading": "Payment",
+      "empty": {
+        "primary_text": "You're nearly there! Kindly ensure all your checkout details are filled in. This will unveil your available payment options."
+      }
+    },
+    "upsell": {
+      "primary_heading": "Recommended for you"
+    },
+    "discount": {
+      "add_discount": "Add discount code",
+      "label": "Discount Code",
+      "button_submit": "Apply Discount"
+    },
+    "total": {
+      "original_price": "Original Price",
+      "saving": "Your saving",
+      "shipping": "Shipping",
+      "sub_total": "Subtotal",
+      "total": "Total"
+    },
+    "submit": {
+      "label": "Complete My Order"
+    },
+    "trust_factors": {
+      "returns": {
+        "icon": "arrow-rotate-left",
+        "heading": "Easy Return"
+      },
+      "satisfaction": {
+        "icon": "trophy",
+        "heading": "Satisfaction Guaranteed"
+      },
+      "secure_payment": {
+        "icon": "lock",
+        "heading": "Secure Payment"
+      }
+    },
+    "error": {
+      "missing_contact_info": "Some contact information are missing. Please verify and complete all required fields.",
+      "missing_payment_info": "Some payment information are missing. Please verify and complete all required fields.",
+      "payment_failed": "Unable to complete payment. Recheck details or switch payment method.",
+      "unknown": "Unexpected error encountered. Please try again."
+    },
+    "overlay": {
+      "wait": "Please wait...",
+      "message": "Your order is processing. Do not press back or refresh until your\norder is complete."
+    }
+  },
+  "checkout_confirmation_page": {
+    "header": {
+      "heading": "Hooray! Your order is zooming our way!",
+      "description": "Thank you for your order! We want to confirm that we have received it and an email detailing your purchase has been sent to <span>{{ emailAddress }}</span>"
+    },
+    "details": {
+      "heading": "Order Details",
+      "total": "Total amount",
+      "order_date": "Order date"
+    },
+    "shipping": {
+      "heading": "Shipping Details"
+    },
+    "estimated_delivery_date_label": "Estimated Delivery",
+    "button": "Continue shopping"
+  },
+  "checkout_error_page": {
+    "heading": "Oops, we had a hiccup!",
+    "content": "It seems that there was an issue with your order. We invite you to try again. If this problem persists, don't panic, send us a short message at {{ emailAddress }}.",
+    "button": "Give it Another Go"
+  },
+  "contact_form": {
+    "button_label": "Send",
+    "success": "Our team will process your request shortly. Thank you for your patience and we look forward to speaking with you.",
+    "error": "Error occurred. Please retry."
+  },
+  "cookies_banner": {
+    "header": {
+      "primary_heading": "Manage my cookies"
+    },
+    "footer": {
+      "accept_all": "I accept all",
+      "button_choose": "I choose",
+      "button_deny": "No thanks"
+    },
+    "consent_banner": {
+      "intro": "We would like to use cookies to enhance your experience during your visit to our website.",
+      "engagement_label": "Our privacy commitment"
+    },
+    "consent_choice": {
+      "check_necessary": "Necessary cookies",
+      "check_necessary_text": "We use these cookies to ensure the proper functioning of our website.",
+      "check_performances": "Performance cookies",
+      "check_performances_text": "Nous utilisons ces cookies pour assurer le bon fonctionnement de notre site web.",
+      "check_analysis": "Analytics cookies",
+      "check_analysis_text": "We use these cookies to provide you with personalized ads on our website."
+    }
+  },
+  "dynamic_page_titles": {
+    "first_title": "\uD83D\uDCA5 DON'T MISS OUR DAILY OFFERS",
+    "second_title": "\uD83C\uDF89 EXCLUSIVE WEEKLY PROMOTIONS"
+  },
+  "express_configurator": {
+    "details": {
+      "reviews": "based on {{reviewCount}} reviews",
+      "error": "Please select your product options to continue.",
+      "success": "Product successfully added to cart!"
+    }
+  },
+  "footer": {
+    "title_categories": "Categories",
+    "title_order": "Your Order",
+    "legal_privacy": "Privacy",
+    "legal_sales": "Sales and Refunds",
+    "legal_shipping": "Shipping and Returns",
+    "legal_terms_of_sales": "Terms of Sale",
+    "legal_notice": "Legal Notice"
+  },
+  "help_page": {
+    "heading": "Need Help? We're Here for You",
+    "help_questions": {
+      "categories": {
+        "heading": "Browse by category"
+      }
+    },
+    "help_contact_form": {
+      "heading": "Your feedback helps us improve",
+      "text": "We’d love to hear from you. Send us a message, and we’ll get back to\n you in a resonable timeframe."
+    },
+    "help_contact": {
+      "heading": "More Ways to\nReach Us",
+      "text": "No worries, we've got you covered.\nWe understand that sometimes you need a little extra.",
+      "email": {
+        "heading": "Email us"
+      },
+      "chat": {
+        "heading": "Live Chat",
+        "text": "Our Support Team"
+      }
+    }
+  },
+  "nav": {
+    "about": "Our Story",
+    "help": "Help & Contact"
+  },
+  "order_links": {
+    "shipping": "Shipping",
+    "returns": "Returns",
+    "payments": "Payments",
+    "other": "Other"
+  },
+  "products_page": {
+    "heading": "Our products"
+  },
+  "product_page": {
+    "loading": {
+      "title": "Hang tight...",
+      "content": "Your tailored experience is currently under construction. A bit of patience, it's on its way!"
+    },
+    "add_to_cart_banner": {
+      "delivery_date": "Order today and get it delivered on "
+    },
+    "product_hero_overview_header": {
+      "best_seller": "Best-Seller",
+      "shipping_free": "Free Shipping",
+      "earn": "SAVE",
+      "review": "based on {{reviewCount}} reviews"
+    },
+    "product_hero_overview_footer": {
+      "delivery_date": "Order today and get it delivered on "
+    },
+    "recently_viewed_products_carousel": {
+      "heading": "Recently viewed products"
+    },
+    "reviews": {
+      "based_on": "based on {{reviewsCount}} reviews",
+      "item_fit": "How did the item fit?",
+      "recommend_product": "I recommend this product",
+      "recommend_product_percentage": "{{percentage}}% would recommend this product",
+      "purchased_size": "Purchased Size",
+      "usual_size": "Usual Size",
+      "write_review": "Write a review",
+      "small": "Small",
+      "just_right": "Just Right",
+      "big": "Big"
+    },
+    "size": {
+      "height_imperial": "Height in feet/inches",
+      "height_metric": "Height in cm",
+      "height_imperial_label": "Feet/inches",
+      "height_metric_label": "CM"
+    }
+  },
+  "trust_factors": {
+    "default": {
+      "fast_delivery": {
+        "icon": "truck-fast",
+        "heading": "Fast delivery",
+        "description": "Order now and receive your purchases in the blink of an eye."
+      },
+      "secure_payment": {
+        "icon": "shield-check",
+        "heading": "Secure payment",
+        "description": "Our transactions are protected for a worry-free shopping experience."
+      },
+      "satisfaction": {
+        "icon": "repeat",
+        "heading": "Buy with confidence",
+        "description": "We are committed to your satisfaction. If you are not happy, we will refund."
+      },
+      "customer_service": {
+        "icon": "headset",
+        "heading": "Customer service",
+        "description": "For any questions or assistance, we are always ready to assist you."
+      }
+    },
+    "product": {
+      "secure_payment": {
+        "icon": "lock",
+        "description": "100% Secure Payment"
+      },
+      "confidence": {
+        "icon": "list-check",
+        "description": "Shop with Confidence"
+      },
+      "satisfaction": {
+        "icon": "arrow-rotate-left",
+        "description": "Satisfaction Guaranteed"
+      }
+    }
+  },
+  "store_reviews": {
+    "heading": "What our 1k+ customers have to say",
+    "global_rating": "A rating of <strong>{{rating}}</strong> out of 5 based on <span>{{reviewCount}} reviews</span>. Our latest reviews."
+  },
+  "size_guide_info": {
+    "info_heading": "Find the perfect fit with our\neasy-to-use size guide.",
+    "modal_heading": "Size guide"
+  },
+  "common": {
+    "and": "and",
+    "add_to_cart": "Add to cart",
+    "add": "Add",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "products": "Products",
+    "product": "Product",
+    "new": "NEW",
+    "see_all": "See all",
+    "with": "With",
+    "relative_time_day": "{{value}} day ago",
+    "relative_time_days": "{{value}} days ago",
+    "relative_time_hour": "{{value}} hour ago",
+    "relative_time_hours": "{{value}} hours ago",
+    "relative_time_minute": "{{value}} minute ago",
+    "relative_time_minutes": "{{value}} minutes ago",
+    "out_of_stock": "Out of Stock",
+    "klarna_message": "4 interest-free installments of "
+  },
+  "options": {
+    "color": "Choose your favorite color",
+    "size": "What’s your perfect fit?"
+  },
+  "placeholder": {
+    "firstname": "Firstname",
+    "lastname": "Lastname",
+    "email_address": "Email address",
+    "phone_number": "Phone number",
+    "message": "Message",
+    "password": "Password",
+    "password_confirmation": "Password confirmation",
+    "search": "Type anything..."
+  },
+  "validation": {
+    "invalid_email": "This email address is invalid",
+    "invalid_length": "The text is too short",
+    "is_required": "This field is required",
+    "invalid_discount_code": "Invalid discount code",
+    "field_is_required": "{{field}} is required",
+    "fields_are_required": "{{fields}} are required",
+    "password_match": "Passwords do not match"
+  },
+  "opengraph": {
+    "homepage": {
+      "description": "Shop now on {{ storeName }} and save big on your online purchases",
+      "trust_factors": {
+        "first": "Fast delivery",
+        "second": "Secure payment",
+        "third": "Satisfaction guaranteed",
+        "fourth": "Customer service"
+      }
+    }
+  },
+  "shop_review_status": {
+    "redirected": "Redirected",
+    "verified": "Verified"
+  },
+  "newsletter_form": {
+    "field_label": "Your email",
+    "button_label": "Subscribe",
+    "success": "Subscribed successfully! Exciting content coming your way.",
+    "error": "Subscription failed. Please try again later."
+  },
+  "block_shop_rating": {
+    "primary_text": "Excellent",
+    "secondary_text": "review of"
+  },
+  "country": {
+    "at": "Austria",
+    "au": "Australia",
+    "be": "Belgium",
+    "ca": "Canada",
+    "ch": "Switzerland",
+    "cs": "Czech Republic",
+    "de": "Germany",
+    "es": "Spain",
+    "fr": "France",
+    "gb": "United Kingdom",
+    "it": "Italy",
+    "lu": "Luxembourg",
+    "nl": "Netherlands",
+    "sv": "Sweden",
+    "us": "United States",
+    "za": "South Africa"
+  },
+  "language": {
+    "de-at": "Austria",
+    "de-ch": "Switzerland (German)",
+    "de-de": "Germany",
+    "de-lu": "Luxembourg (German)",
+    "cs-cz": "Czech",
+    "en-au": "Australia",
+    "en-ca": "Canada (English)",
+    "en-gb": "United Kingdom",
+    "en-us": "United States",
+    "en-za": "South Africa",
+    "es-es": "Spain",
+    "fr-ca": "Canada (French)",
+    "fr-be": "Belgium (French)",
+    "fr-ch": "Switzerland (French)",
+    "fr-fr": "France",
+    "fr-lu": "Luxembourg (French)",
+    "it-ch": "Switzerland (Italian)",
+    "it-it": "Italy",
+    "nl-be": "Belgium (Dutch)",
+    "nl-nl": "Netherlands",
+    "sv-se": "Swedish"
+  }
+}
