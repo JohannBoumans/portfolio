@@ -39,8 +39,7 @@ export function CursorFollower() {
         <m.div
           transition={{ type: `spring`, duration: 0.5 }}
           className={clsx(
-            // `fixed top-0 left-0 bg-[#ff4912] rounded-full pointer-events-none z-[-1]`,
-            `fixed top-0 left-0 bg-[#f9ebdc] rounded-full pointer-events-none z-[-1]`,
+            `fixed top-0 left-0 bg-[#ff4912] rounded-full pointer-events-none z-[-1]`,
           )}
           style={{
             x,

@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import { forwardRef } from 'react';
+import clsx from 'clsx';
 import { inputStyle, invalidClassName } from '../../_shared/style';
 import { InputContainer } from '../../input-container/InputContainer';
 import { Props } from '../types/props';
@@ -20,6 +20,7 @@ export const InputSelectMobile = forwardRef<
     onChange,
     onFocus,
   } = props;
+
   function renderOptions() {
     return options.map((option) => (
       <option key={option.value} value={option.value}>
@@ -27,6 +28,7 @@ export const InputSelectMobile = forwardRef<
       </option>
     ));
   }
+
   const fieldId = `field-${name}`;
   return (
     <InputContainer label={label} fieldId={fieldId} isRequired={isRequired}>
