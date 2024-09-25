@@ -1,8 +1,8 @@
 .cell::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    /*top: 0;*/
+    /*left: 0;*/
     inset: 0.5px;
     background-color: #061423;
     z-index: -1;
@@ -11,8 +11,8 @@
 .cell::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    /*top: 0;*/
+    /*left: 0;*/
     width: 100%;
     height: 100%;
     /*background-color: #ff4912;*/
