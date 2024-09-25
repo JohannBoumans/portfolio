@@ -14,10 +14,6 @@ import {
   FourthGridLineSecondComponent,
 } from './sections/FourthGridLine';
 import {
-  FifthGridLineFirstComponent,
-  FifthGridLineSecondComponent,
-} from './sections/FifthGridLine';
-import {
   SixthGridLineFirstComponent,
   SixthGridLineSecondComponent,
 } from './sections/SixthGridLine';
@@ -50,11 +46,9 @@ import {
   ServicesTitleGridLineFirstComponent,
   ServicesTitleGridLineSecondComponent,
 } from './sections/ServicesTitleGridLine';
-import { ContactForm } from './sections/form/ContactForm';
-import { ContactHeading } from './sections/form/ContactHeading';
 
 export default async function HomePage(props: TemplatePageProps) {
-  const { country, language, locale } = props;
+  const { country, language, locale, slug } = props;
   return (
     <PageWrapper language={language}>
       {/*<TrackPageView pageName={Analytics.Pages.homePage} />*/}
@@ -62,81 +56,85 @@ export default async function HomePage(props: TemplatePageProps) {
       {/*<MeshGradient3 />*/}
       {/*<MeshGradient4 />*/}
       <GridLine
-        firstComponent={<SecondGridLineFirstComponent />}
+        firstComponent={<SecondGridLineFirstComponent language={language} />}
         secondComponent={<SecondGridLineSecondComponent />}
         additionalStyle={{
-          second: `!p-0 !overflow-hidden relative`,
+          second: `!p-0 !overflow-hidden relative cell-transparent`,
         }}
       />
       <GridLine
         firstComponent={<ThirdGridLineFirstComponent />}
-        secondComponent={<ThirdGridLineSecondComponent />}
+        secondComponent={<ThirdGridLineSecondComponent language={language} />}
         additionalStyle={{
-          first: `!overflow-hidden relative`,
+          first: `!p-0 !overflow-hidden relative cell-transparent`,
         }}
       />
-      {/*<PageTransitionEffect2>*/}
       <GridLine
-        firstComponent={<FourthGridLineFirstComponent />}
+        firstComponent={<FourthGridLineFirstComponent language={language} />}
         secondComponent={<FourthGridLineSecondComponent />}
-      />
-      {/*</PageTransitionEffect2>*/}
-      <GridLine
-        isInverted
-        firstComponent={<FifthGridLineFirstComponent />}
-        secondComponent={<FifthGridLineSecondComponent />}
-        additionalStyle={{ second: `min-h-[500px]` }}
+        additionalStyle={{
+          second: `!p-0 !overflow-hidden relative cell-transparent`,
+        }}
       />
       <GridLine
-        firstComponent={<SixthGridLineFirstComponent />}
-        secondComponent={<SixthGridLineSecondComponent />}
+        firstComponent={<SixthGridLineFirstComponent language={language} />}
+        secondComponent={<SixthGridLineSecondComponent language={language} />}
       />
       <GridLine
         isInverted
-        firstComponent={<ServicesTitleGridLineFirstComponent />}
+        firstComponent={
+          <ServicesTitleGridLineFirstComponent language={language} />
+        }
         secondComponent={<ServicesTitleGridLineSecondComponent />}
         additionalStyle={{
           first: `min-h-[176px] flex items-center`,
-          second: `!p-0 overflow-hidden relative`,
+          second: `!p-0 overflow-hidden relative cell-transparent`,
         }}
       />
       <GridLine
         hasThreeColumns
-        firstComponent={<ServicesGridLineFirstComponent />}
-        secondComponent={<ServicesGridLineSecondComponent />}
-        thirdComponent={<ServicesGridLineThirdComponent />}
+        firstComponent={<ServicesGridLineFirstComponent language={language} />}
+        secondComponent={
+          <ServicesGridLineSecondComponent language={language} />
+        }
+        thirdComponent={<ServicesGridLineThirdComponent language={language} />}
       />
       <GridLine
         firstComponent={<RealisationStepGridLineSecondComponent />}
-        secondComponent={<RealisationStepGridLineFirstComponent />}
+        secondComponent={
+          <RealisationStepGridLineFirstComponent language={language} />
+        }
         additionalStyle={{
-          first: `!p-0 overflow-hidden relative`,
+          first: `!p-0 overflow-hidden relative cell-transparent`,
         }}
       />
       <GridLine
         isInverted
         firstComponent={<RealisationStepOneGridLineFirstComponent />}
-        secondComponent={<RealisationStepOneGridLineSecondComponent />}
+        secondComponent={
+          <RealisationStepOneGridLineSecondComponent language={language} />
+        }
       />
       <GridLine
         isInverted
         firstComponent={<RealisationStepTwoGridLineFirstComponent />}
-        secondComponent={<RealisationStepTwoGridLineSecondComponent />}
+        secondComponent={
+          <RealisationStepTwoGridLineSecondComponent language={language} />
+        }
       />
       <GridLine
         isInverted
         firstComponent={<RealisationStepThreeGridLineFirstComponent />}
-        secondComponent={<RealisationStepThreeGridLineSecondComponent />}
+        secondComponent={
+          <RealisationStepThreeGridLineSecondComponent language={language} />
+        }
       />
       <GridLine
         isInverted
         firstComponent={<RealisationStepFourGridLineFirstComponent />}
-        secondComponent={<RealisationStepFourGridLineSecondComponent />}
-      />
-      <GridLine
-        isInverted
-        firstComponent={<ContactHeading />}
-        secondComponent={<ContactForm />}
+        secondComponent={
+          <RealisationStepFourGridLineSecondComponent language={language} />
+        }
       />
     </PageWrapper>
   );

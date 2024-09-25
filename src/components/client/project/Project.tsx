@@ -6,21 +6,32 @@ import { Badge } from '../../server/badge/Badge';
 
 export type Props = {
   title: string;
+  year: string;
   image: ImageType;
   path: string;
 };
 
 export function Project(props: Props) {
-  const { title, image, path } = props;
+  const { title, image, path, year } = props;
   return (
     <Link to={path}>
       <div className="mb-10 max-h-[400px] overflow-hidden relative rounded-lg group">
         <div className="flex items-center justify-between z-0 overflow-hidden">
-          <Badge additionalStyle="absolute top-4 right-4 z-[100] !rounded-full !p-2 !px-4 bg-black/[0.4] backdrop-blur-lg">
-            <Text size="lg" additionalStyle="font-bold" colorScheme="default">
-              {title}
-            </Text>
-          </Badge>
+          <div className="flex items-center justify-end gap-2 absolute top-4 right-4">
+            <Badge additionalStyle="z-[100] !rounded-full !p-2 !px-4 bg-black/[0.4] backdrop-blur-lg">
+              <Text size="lg" additionalStyle="font-bold" colorScheme="default">
+                {title}
+              </Text>
+            </Badge>
+            <Badge
+              gradient="yellow"
+              additionalStyle="z-[100] !rounded-full !p-2 !px-4 bg-black/[0.4] backdrop-blur-lg"
+            >
+              <Text size="lg" additionalStyle="!font-bold !text-black">
+                {year}
+              </Text>
+            </Badge>
+          </div>
           <Image
             src={image.src}
             alt={image.alt}

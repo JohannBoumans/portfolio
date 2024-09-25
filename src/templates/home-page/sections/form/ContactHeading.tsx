@@ -1,6 +1,8 @@
 import { Text } from '../../../../components/server/text/Text';
+import { useIntl } from '../../../../common/intl/hooks/use-intl';
 
 export function ContactHeading() {
+  const { translate } = useIntl();
   return (
     <div>
       <Text
@@ -9,11 +11,10 @@ export function ContactHeading() {
         additionalStyle="font-bold mb-2"
         colorScheme="red"
       >
-        Envie de réaliser votre projet ?
+        {translate(`contact_section.heading`)}
       </Text>
-      <Text as="h2" size="lg" additionalStyle="font-bold">
-        Décrivez moi votre projet, je vous répondrais dans les plus brefs délais
-        !
+      <Text size="lg" additionalStyle="font-bold">
+        {translate(`contact_section.text`)}
       </Text>
     </div>
   );

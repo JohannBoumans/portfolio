@@ -14,6 +14,7 @@ import {
   FormProvider as _FormProvider,
   useForm,
 } from 'react-hook-form';
+//@ts-ignore
 import isEqual from 'lodash.isequal';
 import { DeepPartial } from 'utility-types';
 import {

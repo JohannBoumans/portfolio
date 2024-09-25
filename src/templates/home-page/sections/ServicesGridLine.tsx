@@ -1,8 +1,16 @@
 import { Text } from '../../../components/server/text/Text';
 import { Button } from '../../../components/server/button/Button';
 import { Link } from '../../../common/navigation/components/Link';
+import { Language } from '../../../common/navigation/types/config';
+import { getIntl } from '../../../common/intl/utils/get-intl';
 
-export function ServicesGridLineFirstComponent() {
+type Props = {
+  language: Language;
+};
+
+export async function ServicesGridLineFirstComponent(props: Props) {
+  const { language } = props;
+  const { translate } = await getIntl(language);
   return (
     <div>
       <Text
@@ -11,21 +19,23 @@ export function ServicesGridLineFirstComponent() {
         additionalStyle="font-bold mb-2"
         colorScheme="red"
       >
-        Création de sites vitrines
+        {translate(`home_page.services.showcase-website.heading`)}
       </Text>
       <Text as="p" size="lg" additionalStyle="mb-4">
-        Développement de sites modernes et professionnels pour présenter votre
-        activité, avec un design personnalisé et optimisé pour la visibilité en
-        ligne.
+        {translate(`home_page.services.showcase-website.text`)}
       </Text>
-      <Link to="/services/showcase-website">
-        <Button rightIcon="arrow-up-right">En savoir plus</Button>
+      <Link to="/service/showcase-website">
+        <Button rightIcon="arrow-right">
+          {translate(`home_page.services.button`)}
+        </Button>
       </Link>
     </div>
   );
 }
 
-export function ServicesGridLineSecondComponent() {
+export async function ServicesGridLineSecondComponent(props: Props) {
+  const { language } = props;
+  const { translate } = await getIntl(language);
   return (
     <div>
       <Text
@@ -34,28 +44,23 @@ export function ServicesGridLineSecondComponent() {
         additionalStyle="font-bold mb-2"
         colorScheme="red"
       >
-        Création de sites e-commerce
+        {translate(`home_page.services.e-commerce.heading`)}
       </Text>
       <Text as="p" size="lg" additionalStyle="mb-4">
-        Conception de boutiques en ligne performantes et sécurisées, avec
-        gestion des produits, des commandes et intégration des solutions de
-        paiement.
+        {translate(`home_page.services.e-commerce.text`)}
       </Text>
-      <Link to="/services/e-commerce">
-        <Button rightIcon="arrow-up-right">En savoir plus</Button>
+      <Link to="/service/e-commerce">
+        <Button rightIcon="arrow-right">
+          {translate(`home_page.services.button`)}
+        </Button>
       </Link>
-      {/*<ul className="list-disc list-inside">*/}
-      {/*  {normalWebsiteFeatures.map((feature, key) => (*/}
-      {/*    <Text as="li" key={key} size="lg" additionalStyle="list-item mb-2">*/}
-      {/*      {feature}*/}
-      {/*    </Text>*/}
-      {/*  ))}*/}
-      {/*</ul>*/}
     </div>
   );
 }
 
-export function ServicesGridLineThirdComponent() {
+export async function ServicesGridLineThirdComponent(props: Props) {
+  const { language } = props;
+  const { translate } = await getIntl(language);
   return (
     <div>
       <Text
@@ -64,37 +69,30 @@ export function ServicesGridLineThirdComponent() {
         additionalStyle="font-bold mb-2"
         colorScheme="red"
       >
-        Développement d'applications web
+        {translate(`home_page.services.webapp.heading`)}
       </Text>
       <Text as="p" size="lg" additionalStyle="mb-4">
-        Création d'applications web sur mesure, performantes et adaptées à vos
-        besoins spécifiques. Intégration de fonctionnalités personnalisées pour
-        la gestion des utilisateurs, des données et des interactions.
+        {translate(`home_page.services.webapp.text`)}
       </Text>
-      <Link to="/services/webapp">
-        <Button rightIcon="arrow-up-right">En savoir plus</Button>
+      <Link to="/service/webapp">
+        <Button rightIcon="arrow-right">
+          {translate(`home_page.services.button`)}
+        </Button>
       </Link>
-      {/*<ul className="list-disc list-inside">*/}
-      {/*  {ecommerceFeatures.map((feature, key) => (*/}
-      {/*    <Text as="li" key={key} size="lg" additionalStyle="list-item mb-2">*/}
-      {/*      {feature}*/}
-      {/*    </Text>*/}
-      {/*  ))}*/}
-      {/*</ul>*/}
     </div>
   );
 }
 
-const normalWebsiteFeatures = [
-  `Développement de sites modernes, responsive et optimisés pour présenter votre activité de manière professionnelle.`,
-  `Mise en place d'une interface intuitive et d'un design sur mesure pour refléter l'image de votre entreprise.`,
-  `Intégration d'un backoffice pour la gestion de votre contenu de manière indépendante et flexible`,
-  `Optimisation SEO pour améliorer votre visibilité sur les moteurs de recherche.`,
-];
-
-const ecommerceFeatures = [
-  `Développement de boutiques en ligne performantes et sécurisées pour vendre vos produits.`,
-  `Intégration d'une solution de paiement en ligne (Stripe, PayPal, etc.).`,
-  `Mise en place de systèmes de gestion des stocks, commandes et clients.`,
-  `Optimisation pour un parcours utilisateur fluide, adapté aux mobiles et aux différents navigateurs.`,
-];
+// const normalWebsiteFeatures = [
+//   `Développement de sites modernes, responsive et optimisés pour présenter votre activité de manière professionnelle.`,
+//   `Mise en place d'une interface intuitive et d'un design sur mesure pour refléter l'image de votre entreprise.`,
+//   `Intégration d'un backoffice pour la gestion de votre contenu de manière indépendante et flexible`,
+//   `Optimisation SEO pour améliorer votre visibilité sur les moteurs de recherche.`,
+// ];
+//
+// const ecommerceFeatures = [
+//   `Développement de boutiques en ligne performantes et sécurisées pour vendre vos produits.`,
+//   `Intégration d'une solution de paiement en ligne (Stripe, PayPal, etc.).`,
+//   `Mise en place de systèmes de gestion des stocks, commandes et clients.`,
+//   `Optimisation pour un parcours utilisateur fluide, adapté aux mobiles et aux différents navigateurs.`,
+// ];

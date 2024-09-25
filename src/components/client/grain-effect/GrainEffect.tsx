@@ -18,7 +18,7 @@ export function GrainEffect() {
     const generateNoise = () => {
       const imageData = ctx.createImageData(width, height);
       for (let i = 0; i < imageData.data.length; i += 4) {
-        const gray = Math.random() * 155;
+        const gray = Math.random() * 255;
         imageData.data[i] = gray;
         imageData.data[i + 1] = gray;
         imageData.data[i + 2] = gray;
@@ -34,7 +34,7 @@ export function GrainEffect() {
     <canvas
       ref={canvasRef}
       style={{
-        position: `absolute`,
+        position: `fixed`,
         top: 0,
         left: 0,
         width: `100%`,

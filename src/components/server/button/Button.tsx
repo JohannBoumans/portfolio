@@ -1,4 +1,5 @@
 import { MouseEventHandler, ReactNode } from 'react';
+import clsx from 'clsx';
 import { Icon, Icons } from '../icon/Icon';
 import { AdditionalStyle } from '../../../style/types/additional-style';
 import { Spinner } from '../../client/spinner/Spinner';
@@ -57,12 +58,14 @@ export function Button(props: Props) {
         )}
         <span className={additionalStyle?.text}>{children}</span>
         {rightIcon && (
-          <div className="text-center">
-            <Icon
-              icon={rightIcon}
-              size="sm"
-              additionalStyle={additionalStyle?.rightIcon}
-            />
+          <div className="overflow-hidden">
+            <div className="text-center mt-[2px] transition-transform group-hover:animate-slide-right-left">
+              <Icon
+                icon={rightIcon}
+                size="sm"
+                additionalStyle={additionalStyle?.rightIcon}
+              />
+            </div>
           </div>
         )}
       </>
@@ -80,7 +83,7 @@ export function Button(props: Props) {
         colorScheme,
         size,
         variant,
-        className: additionalStyle?.root,
+        className: clsx(`group`, additionalStyle?.root),
       })}
       onClick={onClick}
     >

@@ -9,12 +9,11 @@ type Props = {
 
 export function GridCell(props: Props) {
   const { additionalStyle, children } = props;
+  // const { controls } = usePageAnimationStore();
+
   return (
     <div
-      className={clsx(
-        `cell w-full overflow-hidden bg-clip-padding relative p-4`,
-        additionalStyle,
-      )}
+      className={clsx(`cell !overflow-hidden relative p-4`, additionalStyle)}
     >
       {children}
     </div>

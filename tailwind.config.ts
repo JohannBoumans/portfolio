@@ -19,8 +19,8 @@ module.exports = {
       colors: {
         primary: `#000000`,
         secondary: `#86868B`,
-        red: `#ff4912`,
-        // red: `#fe9474`,
+        // red: `#ff4912`,
+        red: `#fe9474`,
         teal: {
           50: `#EBFBFE`,
           75: `#B5EFFC`,
@@ -77,6 +77,7 @@ module.exports = {
       animation: {
         enter: `enter 3s ease-in-out forwards`,
         exit: `exit 3s ease-in-out forwards`,
+        'slide-right-left': `slide-right-left-animation 0.3s ease-in-out forwards`,
       },
       keyframes: {
         enter: {
@@ -86,6 +87,14 @@ module.exports = {
         exit: {
           '0%': { transform: `translateY(0)` },
           '100%': { transform: `translateY(-100%)` },
+        },
+        'slide-right-left-animation': {
+          '0%': { transform: `translateX(0)` },
+          '49%': { transform: `translateX(100%)`, opacity: `1` },
+          '50%': { transform: `translateX(100%)`, opacity: `0` },
+          '51%': { transform: `translateX(-100%)`, opacity: `0` },
+          '52%': { transform: `translateX(-100%)`, opacity: `1` },
+          '100%': { transform: `translateX(0)` },
         },
       },
     },

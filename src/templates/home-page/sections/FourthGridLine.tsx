@@ -1,32 +1,33 @@
 import { Text } from '../../../components/server/text/Text';
+import { TopographySvg } from '../../../components/client/topography-svg/TopographySvg';
+import { Language } from '../../../common/navigation/types/config';
+import { getIntl } from '../../../common/intl/utils/get-intl';
 
-export function FourthGridLineFirstComponent() {
+type Props = {
+  language: Language;
+};
+
+export async function FourthGridLineFirstComponent(props: Props) {
+  const { language } = props;
+  const { translate } = await getIntl(language);
   return (
     <div>
       <Text size="4xl" additionalStyle="font-semibold">
-        J'aide les startups ou les particuliers
+        {translate(`home_page.goal.heading.first`)}
       </Text>
       <Text size="4xl" additionalStyle="font-semibold">
-        Á lancer et développer
+        {translate(`home_page.goal.heading.second`)}
       </Text>
-      <Text size="4xl" additionalStyle="font-semibold">
-        Leurs produits.
+      <Text size="4xl" additionalStyle="font-semibold mb-8">
+        {translate(`home_page.goal.heading.third`)}
+      </Text>
+      <Text size="lg" additionalStyle="font-semibold">
+        {translate(`home_page.goal.text`)}
       </Text>
     </div>
   );
 }
 
 export function FourthGridLineSecondComponent() {
-  return (
-    <div>
-      <Text size="lg" additionalStyle="font-semibold">
-        Spécialisé dans la création de sites web, mon objectif est de
-        transformer vos idées en expériences digitales engageantes, adaptées à
-        tous les types d'appareils. De la conception à la mise en ligne, en
-        passant par l'optimisation et la maintenance, je vous accompagne à
-        chaque étape pour assurer le succès et la croissance de vos projets
-        numériques.
-      </Text>
-    </div>
-  );
+  return <TopographySvg additionalStyle="w-[3400px] h-[3400px]" />;
 }

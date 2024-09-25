@@ -1,4 +1,6 @@
 import { Text } from '../../../components/server/text/Text';
+import { getIntl } from '../../../common/intl/utils/get-intl';
+import { Language } from '../../../common/navigation/types/config';
 
 export function RealisationStepFourGridLineFirstComponent() {
   return (
@@ -10,7 +12,19 @@ export function RealisationStepFourGridLineFirstComponent() {
   );
 }
 
-export function RealisationStepFourGridLineSecondComponent() {
+type Props = {
+  language: Language;
+};
+
+export async function RealisationStepFourGridLineSecondComponent(props: Props) {
+  const { language } = props;
+  const { translate } = await getIntl(language);
+
+  const stepFourFeatures = [
+    translate(`home_page.realisation_steps.step_four.first_feature`),
+    translate(`home_page.realisation_steps.step_four.second_feature`),
+    translate(`home_page.realisation_steps.step_four.third_feature`),
+  ];
   return (
     <div>
       <Text
@@ -19,7 +33,7 @@ export function RealisationStepFourGridLineSecondComponent() {
         additionalStyle="font-bold mb-4"
         colorScheme="red"
       >
-        Lancement et maintenance
+        {translate(`home_page.realisation_steps.step_four.heading`)}
       </Text>
       <ul className="list-disc list-inside">
         {stepFourFeatures.map((feature, key) => (
@@ -31,9 +45,3 @@ export function RealisationStepFourGridLineSecondComponent() {
     </div>
   );
 }
-
-const stepFourFeatures = [
-  `Mise en ligne du site et suivi des performances.`,
-  `Formation à la gestion du contenu si besoin.`,
-  `Proposition de services de maintenance et d'évolution du site en fonction des besoins futurs.`,
-];

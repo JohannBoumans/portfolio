@@ -1,4 +1,6 @@
 import { Text } from '../../../components/server/text/Text';
+import { getIntl } from '../../../common/intl/utils/get-intl';
+import { Language } from '../../../common/navigation/types/config';
 
 export function RealisationStepThreeGridLineFirstComponent() {
   return (
@@ -10,7 +12,20 @@ export function RealisationStepThreeGridLineFirstComponent() {
   );
 }
 
-export function RealisationStepThreeGridLineSecondComponent() {
+type Props = {
+  language: Language;
+};
+
+export async function RealisationStepThreeGridLineSecondComponent(
+  props: Props,
+) {
+  const { language } = props;
+  const { translate } = await getIntl(language);
+
+  const stepThreeFeatures = [
+    translate(`home_page.realisation_steps.step_three.first_feature`),
+    translate(`home_page.realisation_steps.step_three.second_feature`),
+  ];
   return (
     <div>
       <Text
@@ -19,7 +34,7 @@ export function RealisationStepThreeGridLineSecondComponent() {
         additionalStyle="font-bold mb-4"
         colorScheme="red"
       >
-        Développement et intégration
+        {translate(`home_page.realisation_steps.step_three.heading`)}
       </Text>
       <ul className="list-disc list-inside">
         {stepThreeFeatures.map((feature, key) => (
@@ -31,8 +46,3 @@ export function RealisationStepThreeGridLineSecondComponent() {
     </div>
   );
 }
-
-const stepThreeFeatures = [
-  `Développement du site web (vitrine ou e-commerce) en utilisant des technologies adaptées aux besoins du client`,
-  `Intégration d'un backoffice pour la gestion de contenu simplifiée et autonome.`,
-];

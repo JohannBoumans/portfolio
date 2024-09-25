@@ -8,7 +8,7 @@ import {
   TemplateLayoutProps,
 } from '../../../../common/navigation/types/page';
 
-export default function SkillsLayoutRoot(props: LayoutProps) {
+export default function AboutLayoutRoot(props: LayoutProps) {
   const { children, params } = props;
   const { locale: urlLocale } = params;
   const locale = mapUrlLocaleToLocale(urlLocale);

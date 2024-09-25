@@ -1,16 +1,25 @@
 import { Text } from '../../../components/server/text/Text';
-import { ParticleAnimation } from '../../../components/client/particles/Particles';
+import { TopographySvg } from '../../../components/client/topography-svg/TopographySvg';
+import { Language } from '../../../common/navigation/types/config';
+import { getIntl } from '../../../common/intl/utils/get-intl';
 
-export function ServicesTitleGridLineFirstComponent() {
+type Props = {
+  language: Language;
+};
+
+export async function ServicesTitleGridLineFirstComponent(props: Props) {
+  const { language } = props;
+  const { translate } = await getIntl(language);
   return (
     <div>
       <Text as="h2" size="4xl" additionalStyle="font-bold" colorScheme="red">
-        Mes services
+        {translate(`home_page.services.heading`)}
       </Text>
     </div>
   );
 }
 
 export function ServicesTitleGridLineSecondComponent() {
-  return <ParticleAnimation height={176} />;
+  // return <ParticleAnimation height={176} />;
+  return <TopographySvg additionalStyle="w-[2200px] h-[2200px]" />;
 }
