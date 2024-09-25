@@ -7,7 +7,6 @@ import { mapLocaleToCountry } from '../../intl/utils/map-locale-to-country';
 export const countryLanguageMap: Record<string, string[]> = {
   FR: [`fr`],
   GB: [`en`],
-  NL: [`nl`],
 };
 
 /**
