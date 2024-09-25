@@ -1,4 +1,6 @@
 import { Text } from '../../../components/server/text/Text';
+import { getIntl } from '../../../common/intl/utils/get-intl';
+import { Language } from '../../../common/navigation/types/config';
 
 export function RealisationStepTwoGridLineFirstComponent() {
   return (
@@ -10,7 +12,18 @@ export function RealisationStepTwoGridLineFirstComponent() {
   );
 }
 
-export function RealisationStepTwoGridLineSecondComponent() {
+type Props = {
+  language: Language;
+};
+
+export async function RealisationStepTwoGridLineSecondComponent(props: Props) {
+  const { language } = props;
+  const { translate } = await getIntl(language);
+
+  const stepTwoFeatures = [
+    translate(`home_page.realisation_steps.step_two.first_feature`),
+    translate(`home_page.realisation_steps.step_two.second_feature`),
+  ];
   return (
     <div>
       <Text
@@ -19,7 +32,7 @@ export function RealisationStepTwoGridLineSecondComponent() {
         additionalStyle="font-bold mb-4"
         colorScheme="red"
       >
-        Conception et design
+        {translate(`home_page.realisation_steps.step_two.heading`)}
       </Text>
       <ul className="list-disc list-inside">
         {stepTwoFeatures.map((feature, key) => (
@@ -31,8 +44,3 @@ export function RealisationStepTwoGridLineSecondComponent() {
     </div>
   );
 }
-
-const stepTwoFeatures = [
-  `Création d'une maquette personnalisée pour valider l'apparence du site.`,
-  `Choix des couleurs, typographies, et mise en page en fonction de votre identité visuelle.`,
-];

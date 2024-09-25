@@ -1,4 +1,5 @@
 import { Link } from '../../../common/navigation/components/Link';
+import { LocaleSwitcher } from '../../../components/client/locale-switcher/LocaleSwitcher';
 
 export function HeaderGridLineFirstComponent() {
   return (
@@ -6,4 +7,8 @@ export function HeaderGridLineFirstComponent() {
       Johann Bms.
     </Link>
   );
+}
+
+export function HeaderGridLineThirdComponent() {
+  return <LocaleSwitcher />;
 }

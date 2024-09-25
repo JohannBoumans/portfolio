@@ -3,13 +3,15 @@ import './style.css';
 
 export function MeshGradient2(props) {
   return (
-    <div style={{ position: `relative`, height: `100vh` }}>
+    <div
+      style={{ position: `fixed`, height: `100vh`, width: `100vh`, zIndex: -1 }}
+    >
       {/* Background using ::before pseudo-element */}
       <div
         style={{
-          position: `absolute`,
-          top: 0,
-          left: 0,
+          // position: `absolute`,
+          // top: 0,
+          // left: 0,
           width: `100%`,
           height: `100%`,
           zIndex: -1, // Ensure background is behind content

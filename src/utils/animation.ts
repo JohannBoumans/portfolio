@@ -1,37 +1,13 @@
 import gsap from 'gsap';
 import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
 
-// export function animatePage(href: string, router: AppRouterInstance) {
-//   const transitionElements = document.querySelectorAll(`div.cell`);
-//   if (transitionElements.length > 0) {
-//     transitionElements.forEach((el) => {
-//       const tl = gsap.timeline();
-//       tl.to(el, {
-//         onStart: () => {
-//           if (el.classList.contains(`slide-in-animation`)) {
-//             el.classList.remove(`slide-in-animation`);
-//           }
-//           el.classList.add(`slide-out-animation`);
-//         },
-//         duration: 1,
-//       }).to(el, {
-//         onStart: () => {
-//           router.push(href);
-//           if (el.classList.contains(`slide-out-animation`)) {
-//             el.classList.remove(`slide-out-animation`);
-//           }
-//           el.classList.add(`slide-in-animation`);
-//         },
-//         duration: 1,
-//       });
-//     });
-//   }
-// }
-
-export const animatePageIn = (href: string, router: AppRouterInstance) => {
+export const animatePageIn = (
+  href: string,
+  router: AppRouterInstance,
+  shouldReplace?: boolean,
+) => {
   // const transitionElement = document.getElementById(`transition-element`);
   const transitionElements = document.querySelectorAll(`div.cell`);
-  console.log(transitionElements, `ELMEENT`);
 
   if (transitionElements.length > 0) {
     transitionElements.forEach((el) => {
@@ -43,8 +19,12 @@ export const animatePageIn = (href: string, router: AppRouterInstance) => {
           }
           el.classList.add(`slide-in-animation`);
         },
-        duration: 1,
+        duration: 0.7,
         onComplete: () => {
+          if (shouldReplace) {
+            router.replace(href);
+            return;
+          }
           router.push(href);
         },
       });
@@ -120,7 +100,8 @@ export const animatePageOut = () => {
           }
           el.classList.add(`slide-out-animation`);
         },
-        duration: 1,
+        duration: 0.7,
+        delay: 0.3,
       });
     });
   }

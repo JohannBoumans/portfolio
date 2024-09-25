@@ -1,11 +1,21 @@
 import { Text } from '../../../components/server/text/Text';
-import { ParticleAnimation } from '../../../components/client/particles/Particles';
+import { Button } from '../../../components/server/button/Button';
+import { Link } from '../../../common/navigation/components/Link';
+import { TopographySvg } from '../../../components/client/topography-svg/TopographySvg';
+import { Language } from '../../../common/navigation/types/config';
+import { getIntl } from '../../../common/intl/utils/get-intl';
 
 export function ThirdGridLineFirstComponent() {
-  return <ParticleAnimation height={238} />;
+  return <TopographySvg />;
 }
 
-export function ThirdGridLineSecondComponent() {
+type Props = {
+  language: Language;
+};
+
+export async function ThirdGridLineSecondComponent(props: Props) {
+  const { language } = props;
+  const { translate } = await getIntl(language);
   return (
     <div>
       <Text
@@ -14,14 +24,19 @@ export function ThirdGridLineSecondComponent() {
         additionalStyle="font-bold mb-2"
         colorScheme="red"
       >
-        Qui suis-je ?
+        {translate(`home_page.about.heading`)}
       </Text>
-      <Text size="lg" additionalStyle="font-bold">
-        Développeur front-end passionné, je m'engage à relever chaque défi avec
-        persévérance pour créer des solutions qui répondent aux attentes des
-        clients, tout en cultivant mes compétences au sein de projets
-        dynamiques.
+      <Text size="lg" additionalStyle="font-bold mb-4">
+        {translate(`home_page.about.text`)}
       </Text>
+      <Link to="/about">
+        <Button
+          rightIcon="arrow-right"
+          // additionalStyle={{ rightIcon: `rotate-45` }}
+        >
+          {translate(`home_page.about.button`)}
+        </Button>
+      </Link>
     </div>
   );
 }

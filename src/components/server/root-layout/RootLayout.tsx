@@ -6,6 +6,7 @@ import { mapUrlLocaleToLocale } from '../../../common/intl/utils/map-url-locale-
 import Providers from '../../client/providers/Providers';
 import { PageProps } from '../../../common/navigation/types/page';
 import { CursorFollower } from '../../client/cursor-follower/CursorFollower';
+import { GrainEffect } from '../../client/grain-effect/GrainEffect';
 
 type Props = PropsWithChildren &
   PageProps & {
@@ -19,10 +20,11 @@ export function RootLayout(props: Props) {
 
   return (
     <Providers locale={mapUrlLocaleToLocale(locale)}>
-      {/*<MeshGradient4 />*/}
+      {/*<MeshGradient3 />*/}
       {/*<ParticleAnimation />*/}
-      {/*<GrainEffect />*/}
-      {/*<Header />*/}
+      {/*<BackgroundWave />*/}
+      <GrainEffect />
+      {/*<Navigation />*/}
       <CursorFollower />
       {children}
       {/*<BlockCookiesBanner language={language} />*/}

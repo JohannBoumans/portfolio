@@ -1,4 +1,6 @@
 import { Text } from '../../../components/server/text/Text';
+import { Language } from '../../../common/navigation/types/config';
+import { getIntl } from '../../../common/intl/utils/get-intl';
 
 export function RealisationStepOneGridLineFirstComponent() {
   return (
@@ -10,7 +12,20 @@ export function RealisationStepOneGridLineFirstComponent() {
   );
 }
 
-export function RealisationStepOneGridLineSecondComponent() {
+type Props = {
+  language: Language;
+};
+
+export async function RealisationStepOneGridLineSecondComponent(props: Props) {
+  const { language } = props;
+  const { translate } = await getIntl(language);
+
+  const stepOneFeatures = [
+    translate(`home_page.realisation_steps.step_one.first_feature`),
+    translate(`home_page.realisation_steps.step_one.second_feature`),
+    translate(`home_page.realisation_steps.step_one.third_feature`),
+  ];
+
   return (
     <div>
       <Text
@@ -19,7 +34,7 @@ export function RealisationStepOneGridLineSecondComponent() {
         additionalStyle="font-bold mb-4"
         colorScheme="red"
       >
-        Analyse des besoins
+        {translate(`home_page.realisation_steps.step_one.heading`)}
       </Text>
       <ul className="list-disc list-inside">
         {stepOneFeatures.map((feature, key) => (
@@ -31,9 +46,3 @@ export function RealisationStepOneGridLineSecondComponent() {
     </div>
   );
 }
-
-const stepOneFeatures = [
-  `Analyse de vos besoins et objectifs.`,
-  `Proposition de solutions adaptées à votre activité (vitrine ou e-commerce).`,
-  `Définition du cahier des charges.`,
-];

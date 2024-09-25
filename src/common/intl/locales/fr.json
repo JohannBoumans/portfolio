@@ -1,424 +1,330 @@
 {
-  "account_pages": {
-    "primary_heading": "Mon Compte",
-    "navigation": {
-      "orders": "Commandes",
-      "profile": "Profil",
-      "addresses": "Adresses",
-      "logout": "Se déconnecter"
+  "home_page": {
+    "primary_heading": {
+      "first": "Développeur Web",
+      "second": "Au service",
+      "third": "De vos idées"
     },
-    "orders_page": {
-      "primary_heading": "Commandes",
-      "primary_order_type": "En cours",
-      "secondary_order_type": "Passée",
-      "empty_orders": {
-        "primary_heading": "Vous n'avez pas de commande",
-        "primary_text": "Vous nous avez beaucoup manqué.",
-        "button_label": "Tous les produits"
+    "about": {
+      "heading": "Qui suis-je ?",
+      "text": "Passionné par le développement web, je suis un développeur front-end spécialisé en React et TypeScript. J'aime créer des solutions innovantes, performantes et adaptées aux besoins de chaque client. Découvrez mon parcours et mes compétences en détail.",
+      "button": "Á propos"
+    },
+    "goal": {
+      "heading": {
+        "first": "J'aide les startups ou les particuliers",
+        "second": "Á lancer et développer",
+        "third": "Leurs produits."
       },
-      "order_line_headings": {
-        "primary_heading": "Référence",
-        "secondary_heading": "Date",
-        "tertiary_heading": "Prix",
-        "fourth_heading": "Status"
+      "text": "Spécialisé dans la création de sites web, mon objectif est de transformer vos idées en expériences digitales engageantes, adaptées à tous les types d'appareils. De la conception à la mise en ligne, en passant par l'optimisation et la maintenance, je vous accompagne à chaque étape pour assurer le succès et la croissance de vos projets numériques."
+    },
+    "projects": {
+      "heading": "Mes projets",
+      "text": "Découvrez un aperçu des différents projets sur lesquels j'ai travaillé, que ce soit en tant qu'employé ou en tant qu'indépendant, alliant créativité et technique. Chaque réalisation est unique et conçue sur mesure pour répondre aux besoins spécifiques de mes clients."
+    },
+    "services": {
+      "heading": "Mes services",
+      "button": "En savoir plus",
+      "showcase-website": {
+        "heading": "Création de sites vitrines",
+        "text": "Développement de sites modernes et professionnels pour présenter votre activité, avec un design personnalisé et optimisé pour la visibilité en ligne."
       },
-      "order_line": {
-        "primary_text": "Commande"
+      "e-commerce": {
+        "heading": "Création de sites e-commerce",
+        "text": "Conception de boutiques en ligne performantes et sécurisées, avec gestion des produits, des commandes et intégration des solutions de paiement."
       },
-      "order_line_item_headings": {
-        "primary_heading": "Nom",
-        "secondary_heading": "Prix",
-        "tertiary_heading": "Quantité",
-        "fourth_heading": "Total"
-      },
-      "order_status": {
-        "not_fulfilled": "Non traitée",
-        "partially_fulfilled": "Partiellement traitée",
-        "fulfilled": "Traitée",
-        "partially_shipped": "Partiellement expédiée",
-        "shipped": "Expédiée",
-        "partially_returned": "Partiellement retournée",
-        "returned": "Retournée",
-        "canceled": "Annulée"
+      "webapp": {
+        "heading": "Développement d'applications web",
+        "text": "Création d'applications web sur mesure, performantes et adaptées à vos besoins spécifiques. Intégration de fonctionnalités personnalisées pour la gestion des utilisateurs, des données et des interactions."
       }
     },
-    "profile_page": {
-      "update_profile_form": {
-        "primary_heading": "Profil",
-        "success": "Profil mis à jour avec succès !",
-        "errors": {
-          "error": "Une erreur s'est produite. Veuillez réessayer."
+    "realisation_steps": {
+      "heading": "Quelles sont les différentes étapes de conception ?",
+      "step_one": {
+        "heading": "Analyse des besoins",
+        "first_feature": "Analyse de vos besoins et objectifs.",
+        "second_feature": "Proposition de solutions adaptées à votre activité (vitrine ou e-commerce).",
+        "third_feature": "Définition du cahier des charges."
+      },
+      "step_two": {
+        "heading": "Conception et design",
+        "first_feature": "Création d'une maquette personnalisée pour valider l'apparence du site.",
+        "second_feature": "Choix des couleurs, typographies, et mise en page en fonction de votre identité visuelle."
+      },
+      "step_three": {
+        "heading": "Développement et intégration",
+        "first_feature": "Développement du site web (vitrine ou e-commerce) en utilisant des technologies adaptées aux besoins du client",
+        "second_feature": "Intégration d'un backoffice pour la gestion de contenu simplifiée et autonome."
+      },
+      "step_four": {
+        "heading": "Lancement et maintenance",
+        "first_feature": "Mise en ligne du site et suivi des performances.",
+        "second_feature": "Formation à la gestion du contenu si besoin.",
+        "third_feature": "Proposition de services de maintenance et d'évolution du site en fonction des besoins futurs."
+      }
+    }
+  },
+  "about_page": {
+    "heading": "Qui suis-je ?",
+    "text": {
+      "first": "Je me suis passionné pour le web et le code dès 2017, ce qui m’a conduit à suivre une formation de développeur web à l’IFOSUP. Après avoir acquis les bases, j’ai décidé de poursuivre mon apprentissage en lançant mon activité d’indépendant. En recherchant mes premiers clients, j’ai perfectionné mes compétences et pris un réel plaisir à créer des solutions répondant pleinement aux attentes des utilisateurs. Plus tard, j’ai eu l’opportunité de rejoindre Hedda Health, une entreprise dédiée à rendre la médecine fonctionnelle plus accessible. J’y ai développé un e-commerce pour la vente de compléments alimentaires ainsi qu’une application mobile pour améliorer la qualité de vie des utilisateurs grâce à des quiz santé et des conseils personnalisés.",
+      "second": "Développeur web front-end spécialisé en React et TypeScript, j'ai acquis une expertise solide dans l'utilisation des technologies modernes. Je travaille principalement avec Next.js pour concevoir des applications performantes et scalables. J'utilise également Git pour la gestion de versions et j’ai une bonne expérience en React Native/Expo pour le développement d’applications mobiles. Je collabore facilement en équipe et m'applique à développer des solutions solides, tout en veillant à offrir une expérience utilisateur fluide et à maintenir un code de qualité."
+    }
+  },
+  "project_page": {
+    "projects": {
+      "hedda": {
+        "name": "Hedda Health",
+        "year": "2023",
+        "link": {
+          "label": "Voir le site",
+          "path": "https://hedda.health/"
+        },
+        "images": {
+          "first": "/images/hedda/hedda-1.png",
+          "second": "/images/hedda/hedda-2.png",
+          "third": "/images/hedda/hedda-3.png",
+          "fourth": "/images/hedda/hedda-4.png",
+          "fifth": "/images/hedda/hedda-5.png",
+          "sixth": "/images/hedda/hedda-6.png",
+          "seventh": "/images/hedda/hedda-7.png",
+          "eighth": "/images/hedda/hedda-8.png",
+          "ninth": "/images/hedda/hedda-9.png"
+        },
+        "description": {
+          "heading": "Hedda Health – E-commerce & Santé fonctionnelle",
+          "text": {
+            "first": "Lorsque j'ai travaillé chez Hedda comme employé, j'ai eu l'opportunité de développer un e-commerce innovant avec Gatsby et Shopify, axé sur la santé fonctionnelle. L'objectif de ce projet était de rendre cette approche médicale plus accessible, en allégeant les coûts souvent élevés.",
+            "second": "Le site Hedda mettait en avant une application mobile, que j'ai conçue avec React Native et Expo, permettant aux utilisateurs de réaliser des quiz et des tests pour obtenir un \"score santé Hedda\". À terme, l'idée était d'intégrer des analyses de sang afin de croiser les résultats avec les scores des quiz, offrant ainsi un suivi santé personnalisé et plus précis.",
+            "third": "L'application mobile et le site proposaient également des articles informatifs sur les bienfaits des compléments alimentaires, ainsi que sur d'autres sujets axés sur l'amélioration de la qualité de vie. Ces contenus permettaient aux utilisateurs de mieux comprendre comment prendre soin de leur santé de manière proactive.",
+            "fourth": "En parallèle, le site proposait à la vente des compléments alimentaires, essentiels pour soutenir le bien-être des utilisateurs en fonction de leurs résultats."
+          }
         }
       },
-      "update_password_form": {
-        "primary_heading": "Mot de passe",
-        "success": "Votre mot de passe à été mis à jour !",
-        "errors": {
-          "error": "Une erreur s'est produite. Veuillez réessayer.",
-          "password_match": "Les mots de passe ne correspondent pas !"
+      "guilmin": {
+        "name": "Guilmin",
+        "year": "2021",
+        "link": {
+          "label": "Voir le site",
+          "path": "https://guilmin.be/"
+        },
+        "images": {
+          "first": "/images/guilmin/guilmin-1.png",
+          "second": "/images/guilmin/guilmin-2.png",
+          "third": "/images/guilmin/guilmin-3.png",
+          "fourth": "/images/guilmin/guilmin-4.png",
+          "fifth": "/images/guilmin/guilmin-5.png",
+          "sixth": "/images/guilmin/guilmin-6.png",
+          "seventh": "/images/guilmin/guilmin-7.png"
+        },
+        "description": {
+          "heading": "Guilmin - Site vitrine usine de peinture belge",
+          "text": {
+            "first": "Pour le projet Guilmin, j'ai développé un site vitrine destiné à une entreprise familiale belge active dans le secteur de la peinture depuis 1937.",
+            "second": "Avec une riche expérience dans la fabrication de peintures, Guilmin se distingue par son excellente réputation, bâtie sur la qualité de ses produits et sa fiabilité.",
+            "third": "Le site a été conçu en deux sections distinctes : la partie magasin, dédiée à la vente des produits, et la partie usine, qui met en avant le processus de fabrication.",
+            "fourth": "J'ai utilisé GatsbyJS pour garantir des performances rapides et fluides, et Chakra UI pour créer une interface moderne et responsive, adaptée à tous les types d'appareils."
+          }
         }
       },
-      "button_submit": "Mettre à jour"
-    },
-    "addresses_page": {
-      "primary_heading": "Adresses",
-      "empty_addresses": "Vous n'avez pas d'adresses enregistrées",
-      "create_address_form": {
-        "button_submit": "Ajouter l'adresse",
-        "error": "Erreur lors de la création de l'adresse",
-        "success": "Votre addresse à été ajoutée avec succès !"
+      "gleamm": {
+        "name": "Gleamm",
+        "year": "2023",
+        "link": {
+          "label": "Voir le site",
+          "path": "https://gleamm.be/"
+        },
+        "images": {
+          "first": "/images/gleamm/gleamm-1.png",
+          "second": "/images/gleamm/gleamm-2.png",
+          "third": "/images/gleamm/gleamm-3.png",
+          "fourth": "/images/gleamm/gleamm-4.png"
+        },
+        "description": {
+          "heading": "Gleamm – Site vitrine pour blanchiment dentaire",
+          "text": {
+            "first": "Pour le projet Gleamm, j'ai développé un site vitrine destiné à un client spécialisé dans les services de blanchiment dentaire.",
+            "second": "Le client souhaitait une interface simple et élégante, permettant aux visiteurs de découvrir rapidement les services proposés. Le site, conçu en one page, rassemble toutes les informations importantes sur une seule page pour une navigation fluide.",
+            "third": "Une fonctionnalité de prise de rendez-vous a également été intégrée, permettant aux clients de planifier facilement leurs visites pour des empreintes dentaires chez le dentiste.",
+            "fourth": "J'ai choisi d'utiliser GatsbyJS, garantissant des temps de chargement rapides et Chakra UI pour un design moderne et réactif, s’adaptant parfaitement à tous types d'appareils."
+          }
+        }
       },
-      "update_address_form": {
-        "button_submit": "Modifier l'adresse",
-        "error": "Erreur lors de la modification de l'adresse",
-        "success": "Votre addresse à été modifiée avec succès !"
-      },
-      "delete_address_modal": {
-        "primary_heading": "Êtes vous sûr de vouloir supprimer l'adresse ?",
-        "error": "Erreur lors de la suppression de l'adresse",
-        "success": "L'adresse a été supprimée avec succès !"
+      "aboutgreen": {
+        "name": "About Green",
+        "year": "2019",
+        "link": {
+          "label": "Voir le site",
+          "path": "https://aboutgreen.be/"
+        },
+        "images": {
+          "first": "/images/aboutgreen/aboutgreen-1.png",
+          "second": "/images/aboutgreen/aboutgreen-2.png",
+          "third": "/images/aboutgreen/aboutgreen-3.png",
+          "fourth": "/images/aboutgreen/aboutgreen-4.png",
+          "fifth": "/images/aboutgreen/aboutgreen-5.png",
+          "sixth": "/images/aboutgreen/aboutgreen-6.png",
+          "seventh": "/images/aboutgreen/aboutgreen-7.png",
+          "eighth": "/images/aboutgreen/aboutgreen-8.png"
+        },
+        "description": {
+          "heading": "AboutGreen – Site vitrine pour murs végétaux",
+          "text": {
+            "first": "Pour le projet AboutGreen, j'ai créé un site vitrine pour un client basé au Luxembourg et en Belgique, spécialisé dans la conception et la réalisation de murs végétaux.",
+            "second": "L'entreprise propose une large gamme de solutions sur mesure, allant des murs végétaux naturels vivants aux murs stabilisés et préservés, incluant plantes, mousses lichen, feuillages et même des éléments décoratifs comme des logos végétaux.",
+            "third": "Leur expertise couvre également des projets tels que des toits végétaux et des séparateurs végétaux, offrant ainsi une approche innovante pour intégrer la nature dans les espaces urbains.",
+            "fourth": "Le design du site a été élaboré pour correspondre l'image d'AboutGreen."
+          }
+        }
       }
     }
   },
-  "auth_pages": {
-    "auth_page_container": {
-      "login": {
-        "label": "Vous n'avez pas de compte ?",
-        "link": "S'inscrire"
+  "service_page": {
+    "showcase-website": {
+      "heading": "Sites vitrines",
+      "image": "/images/service-showcase.png",
+      "why": {
+        "heading": "Votre vitrine digitale, toujours ouverte !",
+        "text": {
+          "first": "Un site vitrine est un outil essentiel pour présenter votre entreprise et attirer des clients. Comme une vitrine de magasin, il met en valeur vos produits, services et savoir-faire, tout en reflétant l’ADN de votre marque.",
+          "second": "Accessible 24/7, il offre à vos prospects la possibilité de découvrir qui vous êtes, à tout moment. Un site bien conçu, design et ergonomique est la clé pour capter de nouveaux clients et renforcer votre présence en ligne."
+        }
       },
-      "register": {
-        "label": "Vous avez déjà un compte ?",
-        "link": "Se connecter"
+      "benefits": {
+        "heading": "Les avantages d’un site vitrine",
+        "first": {
+          "icon": "eye",
+          "heading": "Visibilité accrue",
+          "text": "Mettez votre entreprise sous les projecteurs et permettez à vos clients potentiels de vous trouver facilement sur le web."
+        },
+        "second": {
+          "icon": "user-tie",
+          "heading": "Crédibilité",
+          "text": "Une présence en ligne bien soignée inspire confiance et professionnalisme."
+        },
+        "third": {
+          "icon": "gears",
+          "heading": "Simplicité",
+          "text": "Un site vitrine est léger, facile à maintenir, tout en véhiculant les informations essentielles."
+        },
+        "fourth": {
+          "icon": "gauge-high",
+          "heading": "Rapidité de navigation",
+          "text": "Un temps de chargement rapide améliore l’expérience utilisateur et augmente vos chances de convertir des prospects en clients."
+        },
+        "fifth": {
+          "icon": "mobile",
+          "heading": "Adapté au mobile",
+          "text": "Chaque page web s’adapte parfaitement aux écrans des smartphones et tablettes."
+        },
+        "sixth": {
+          "icon": "mirror",
+          "heading": "À votre image",
+          "text": "Il est le reflet de votre entreprise et est personnalisé suivant votre charte graphique."
+        }
+      }
+    },
+    "e-commerce": {
+      "heading": "E-commerce",
+      "image": "/images/service-ecom.png",
+      "why": {
+        "heading": "Transformez votre présence digitale en machine à ventes",
+        "text": {
+          "first": "Un site e-commerce est plus qu'un simple catalogue en ligne : c'est un levier stratégique pour booster vos ventes et atteindre de nouveaux marchés. Accessible 24/7, il permet à vos clients d'acheter à tout moment et où qu'ils soient.",
+          "second": "Avec des descriptions détaillées, photos et vidéos, il facilite la prise de décision et offre un achat sécurisé en quelques clics. Il combine la force d'une boutique physique avec les avantages du digital : visibilité accrue, portée mondiale et ventes automatisées. Résultat : plus de clients, plus de ventes, et une présence en ligne renforcée pour votre entreprise."
+        }
       },
-      "recover_password": {
-        "label": "Retour à la connexion"
+      "benefits": {
+        "heading": "Les avantages d’un site e-commerce",
+        "first": {
+          "icon": "ruler",
+          "heading": "Site sur mesure",
+          "text": "Un site qui vous ressemble, en adéquation avec vos besoins."
+        },
+        "second": {
+          "icon": "calendar",
+          "heading": "Disponibilité 24/7",
+          "text": "Votre boutique est accessible à tout moment, permettant à vos clients d’acheter quand ils le souhaitent, sans contraintes horaires."
+        },
+        "third": {
+          "icon": "list",
+          "heading": "Produits structurés",
+          "text": "Vos produits et services sont catégorisés afin d’être facilement trouvés par vos clients."
+        },
+        "fourth": {
+          "icon": "shield",
+          "heading": "Paiements sécurisés",
+          "text": "Intégration de systèmes de paiement fiables pour rassurer vos clients et leur offrir une expérience d’achat sans stress."
+        },
+        "fifth": {
+          "icon": "chart",
+          "heading": "Gestion facile",
+          "text": "Vous gérez aisément votre catalogue, vos stocks et vos ventes via un CMS intuitif."
+        },
+        "sixth": {
+          "icon": "globe",
+          "heading": "Portée mondiale",
+          "text": "Un site e-commerce supprime les barrières géographiques, vous permettant de vendre vos produits partout, élargissant ainsi votre marché."
+        }
+      }
+    },
+    "webapp": {
+      "heading": "Applications Web",
+      "image": "/images/service-webapp.png",
+      "why": {
+        "heading": "Applications web : transformez vos idées en solutions interactives",
+        "text": {
+          "first": "Une application web est bien plus qu’un simple site internet. Elle permet d’interagir directement avec vos utilisateurs, offrant une expérience fluide et personnalisée, où que vous soyez. Que ce soit pour automatiser des processus, gérer des données ou offrir un service innovant, une application web est un outil puissant pour améliorer votre efficacité et répondre aux besoins spécifiques de vos clients. Accessible depuis n’importe quel appareil connecté, elle est conçue pour fonctionner en temps réel, sans nécessiter d’installation.",
+          "second": "Votre application est développée sur mesure, pour s'adapter à vos objectifs et refléter votre identité. En créant une solution à votre image, vous renforcez non seulement votre image de marque, mais vous offrez également une expérience utilisateur intuitive et engageante, qui répond aux attentes de vos utilisateurs tout en optimisant votre activité."
+        }
       },
-      "reset_password": {
-        "label": "Retour à la connexion"
+      "benefits": {
+        "heading": "Les avantages d'une application Web",
+        "first": {
+          "icon": "layer",
+          "heading": "Accessibilité multi-plateformes",
+          "text": "Accessible depuis n’importe quel appareil, une application web ne nécessite aucune installation, offrant une expérience utilisateur fluide et continue sur mobile, tablette et ordinateur."
+        },
+        "second": {
+          "icon": "code",
+          "heading": "Personnalisation complète",
+          "text": "Chaque application est développée selon vos besoins spécifiques, permettant de créer une solution sur mesure parfaitement adaptée à vos objectifs et à votre audience."
+        },
+        "third": {
+          "icon": "realtime",
+          "heading": "Fonctionnalités interactives",
+          "text": "Une application web permet une interaction en temps réel avec vos utilisateurs, rendant l'expérience dynamique et engageante."
+        },
+        "fourth": {
+          "icon": "time",
+          "heading": "Automatisation et gain de temps",
+          "text": "Automatisez des processus complexes et gagnez du temps en simplifiant la gestion de votre activité ou en offrant des services innovants à vos utilisateurs."
+        },
+        "fifth": {
+          "icon": "graphic-up",
+          "heading": "Scalabilité",
+          "text": "Développée pour grandir avec votre entreprise, une application web peut évoluer facilement pour intégrer de nouvelles fonctionnalités au fur et à mesure de votre croissance."
+        },
+        "sixth": {
+          "icon": "upgrade",
+          "heading": "Mises à jour simplifiées",
+          "text": "Contrairement aux applications natives, les mises à jour d'une application web sont instantanément déployées à tous les utilisateurs, sans besoin de téléchargements supplémentaires."
+        }
       }
-    },
-    "register_page": {
-      "register_form": {
-        "primary_heading": "Content de vous revoir!",
-        "primary_text": "Vous nous avez beaucoup manqué.",
-        "button_label": "S'inscrire"
-      }
-    },
-    "login_page": {
-      "login_form": {
-        "primary_heading": "Connexion",
-        "button_label": "Se connecter",
-        "forgotten_password": "Mot de passé oublié ?"
-      }
-    },
-    "recover_password_page": {
-      "recover_password_form": {
-        "primary_heading": "Mot de passe oublié?",
-        "primary_text": "Vous nous avez beaucoup manqué.",
-        "button_label": "Envoyer les instructions",
-        "success": "Email envoyé avec succès !"
-      }
-    },
-    "reset_password_page": {
-      "reset_password_form": {
-        "primary_heading": "Réinitialiser le mot de passe",
-        "primary_text": "Vous nous avez beaucoup manqué.",
-        "button_label": "Réinitialiser le mot de passe",
-        "success": "Votre mot de passe à été réinitialisé !",
-        "missing_token": "Le token est manquant"
-      }
-    },
-    "errors": {
-      "error": "Une erreur s'est produite. Veuillez réessayer.",
-      "password_match": "Les mots de passe ne correspondent pas !"
     }
   },
-  "cart": {
-    "primary_heading": "Votre panier",
-    "shipping_delivery": "Livraison prévue le",
-    "empty_cart": {
-      "primary_heading": "Votre panier est vide."
-    },
-    "products_upsells": {
-      "primary_heading": "Souvent achetés ensemble."
-    },
-    "checkout_actions": {
-      "sub_total": "Sous-total ",
-      "savings": "Économies",
-      "shipping": "Livraison",
-      "free": "Gratuite",
-      "total": "Total",
-      "confirm_order": "Passer à la caisse -"
-    }
+  "contact_section": {
+    "heading": "Envie de collaborer ?",
+    "text": "N'hésitez pas à me contacter pour discuter de votre projet ou simplement échanger des idées. Je suis toujours ouvert à de nouvelles opportunités !",
+    "success": "Votre message à bien été envoyé !",
+    "error": "Une erreur est survenue"
   },
-  "checkout_page": {
-    "header": {
-      "back": "Retour à la boutique"
-    },
-    "summary": {
-      "primary_heading": "Récapitulatif"
-    },
-    "shipping": {
-      "primary_heading": "Livraison",
-      "badge": "Recommandée",
-      "delivery": "Livraison estimée le {{shippingDelay}}",
-      "shipping_free": "GRATUITE",
-      "empty": {
-        "primary_text": "Ajoutez un article au panier",
-        "secondary_text": "Pas de livraison"
-      }
-    },
-    "contact": {
-      "primary_heading": "Détails",
-      "labels": {
-        "email": "E-mail",
-        "phone": "Téléphone",
-        "firstname": "Prénom",
-        "lastname": "Nom",
-        "address": "Adresse",
-        "city": "Ville",
-        "province": "Province",
-        "zip": "Code postal",
-        "country": "Pays"
-      }
-    },
-    "payments": {
-      "primary_heading": "Paiement",
-      "empty": {
-        "primary_text": "Vous y êtes presque ! Assurez-vous de bien remplir tous les détails de votre commande. Cela dévoilera vos options de paiement disponibles."
-      }
-    },
-    "upsell": {
-      "primary_heading": "Recommandé pour vous"
-    },
-    "discount": {
-      "add_discount": "Ajouter un code de réduction",
-      "label": "Code de réduction",
-      "button_submit": "Appliquer la réduction"
-    },
-    "total": {
-      "original_price": "Prix original",
-      "saving": "Vos économies",
-      "shipping": "Livraison",
-      "sub_total": "Sous-total",
-      "total": "Total"
-    },
-    "submit": {
-      "label": "Finaliser ma Commande"
-    },
-    "trust_factors": {
-      "returns": {
-        "icon": "arrow-rotate-left",
-        "heading": "Retour facile"
-      },
-      "satisfaction": {
-        "icon": "trophy",
-        "heading": "Satisfaction garantie"
-      },
-      "secure_payment": {
-        "icon": "lock",
-        "heading": "Paiement sécurisé"
-      }
-    },
-    "error": {
-      "missing_contact_info": "Certaines informations de contact sont manquantes. Veuillez vérifier et compléter tous les champs requis.",
-      "missing_payment_info": "Certaines informations de paiement sont manquantes. Veuillez vérifier et compléter tous les champs requis.",
-      "payment_failed": "Impossible d'effectuer le paiement. Vérifiez vos détails ou changez de moyen de paiement.",
-      "unknown": "Une erreur inattendue s'est produite. Veuillez réessayer."
-    },
-    "overlay": {
-      "wait": "Un peu de patience...",
-      "message": "Votre commande est en cours de traitement. Ne cliquez pas sur retour ou actualiser jusqu'à ce que votre commande soit terminée."
-    }
-  },
-  "checkout_confirmation_page": {
-    "header": {
-      "heading": "Hourra ! Votre commande est en route !",
-      "description": "Merci pour votre commande ! Nous tenons à confirmer que nous l'avons bien reçue et un e-mail détaillant votre achat a été envoyé à <span>{{ emailAddress }}</span>"
-    },
-    "details": {
-      "heading": "Détails de la commande",
-      "total": "Montant total",
-      "order_date": "Date de la commande"
-    },
-    "shipping": {
-      "heading": "Détails de livraison"
-    },
-    "estimated_delivery_date_label": "Livraison estimée",
-    "button": "Continuer vos achats"
-  },
-  "checkout_error_page": {
-    "heading": "Oups, on a eu un hic !",
-    "content": "Il semble qu'il y ait eu un souci avec votre commande. Nous vous invitons à réessayer. Si ce problème persiste, pas de panique, envoyez-nous un petit message à {{ emailAddress }}.",
-    "button": "Retentez Votre Chance"
-  },
-  "contact_form": {
-    "button_label": "Envoyer",
-    "success": "Notre équipe traitera votre demande sous peu. Merci pour votre patience et nous sommes impatients de vous parler.",
-    "error": "Une erreur s'est produite. Veuillez réessayer."
-  },
-  "cookies_banner": {
-    "header": {
-      "primary_heading": "Gérer mes cookies"
-    },
+  "layout": {
     "footer": {
-      "accept_all": "J'accepte tout",
-      "button_choose": "Je choisis",
-      "button_deny": "Non merci"
-    },
-    "consent_banner": {
-      "intro": "Nous aimerions utiliser des cookies pour améliorer votre expérience lors de votre visite sur notre site Web.",
-      "engagement_label": "Notre engagement en matière de confidentialité"
-    },
-    "consent_choice": {
-      "check_necessary": "Cookies nécessaires",
-      "check_necessary_text": "Nous utilisons ces cookies pour assurer le bon fonctionnement de notre site Web.",
-      "check_performances": "Cookies de performance",
-      "check_performances_text": "Nous utilisons ces cookies pour assurer le bon fonctionnement de notre site Web.",
-      "check_analysis": "Cookies d'analyse",
-      "check_analysis_text": "Nous utilisons ces cookies pour vous fournir des publicités personnalisées sur notre site Web."
-    }
-  },
-  "dynamic_page_titles": {
-    "first_title": "\uD83D\uDCA5 NE MANQUEZ PAS NOS OFFRES QUOTIDIENNES",
-    "second_title": "\uD83C\uDF89 PROMOTIONS EXCLUSIVES HEBDOMADAIRES"
-  },
-  "express_configurator": {
-    "details": {
-      "reviews": "basé sur {{reviewCount}} avis",
-      "error": "Aucune option n'est sélectionnée.",
-      "success": "Produit ajouté au panier avec succès !"
-    }
-  },
-  "footer": {
-    "title_categories": "Catégories",
-    "title_order": "Votre commande",
-    "legal_privacy": "Confidentialité",
-    "legal_sales": "Ventes et retours",
-    "legal_shipping": "Livraison et retours",
-    "legal_terms_of_sales": "Conditions de vente",
-    "legal_notice": "Avis légal"
-  },
-  "help_page": {
-    "heading": "Besoin d'aide ? Nous sommes là pour vous",
-    "help_questions": {
-      "categories": {
-        "heading": "Parcourir par catégorie"
-      }
-    },
-    "help_contact_form": {
-      "heading": "Votre avis nous aide à nous améliorer",
-      "text": "Nous aimerions avoir de vos nouvelles. Envoyez-nous un message, et nous vous répondrons dans un délai raisonnable."
-    },
-    "help_contact": {
-      "heading": "Autres moyens pour\nnous joindre",
-      "text": "Pas de soucis, nous sommes là pour vous aider.\nNous comprenons que parfois, vous avez besoin d'un peu plus.",
-      "email": {
-        "heading": "Envoyez-nous un e-mail"
-      },
-      "chat": {
-        "heading": "Chat en direct",
-        "text": "Notre équipe de support"
+      "links": {
+        "first": "Á propos"
       }
     }
-  },
-  "nav": {
-    "about": "Notre histoire",
-    "help": "Aide & Contact"
-  },
-  "order_links": {
-    "shipping": "Livraison",
-    "returns": "Retours",
-    "payments": "Paiements",
-    "other": "Autre"
-  },
-  "products_page": {
-    "heading": "Nos produits"
-  },
-  "product_page": {
-    "loading": {
-      "title": "Accrochez-vous...",
-      "content": "Votre expérience sur mesure est en cours de préparation. Un petit instant de patience, ça arrive !"
-    },
-    "add_to_cart_banner": {
-      "delivery_date": "Commandez aujourd'hui et soyez livré le "
-    },
-    "product_hero_overview_header": {
-      "best_seller": "Best-seller",
-      "shipping_free": "Livraison gratuite",
-      "earn": "ÉCONOMISEZ",
-      "review": "basé sur {{reviewCount}} avis"
-    },
-    "product_hero_overview_footer": {
-      "delivery_date": "Commandez aujourd'hui et soyez livré le "
-    },
-    "recently_viewed_products_carousel": {
-      "heading": "Produits récemment consultés"
-    },
-    "reviews": {
-      "based_on": "basé sur {{reviewsCount}} avis",
-      "item_fit": "Comment l'article vous allait-il ?",
-      "recommend_product": "Je recommande ce produit",
-      "recommend_product_percentage": "{{percentage}}% recommanderait ce produit",
-      "purchased_size": "Taille achetée",
-      "usual_size": "Taille habituelle",
-      "write_review": "Écrire un avis",
-      "small": "Petit",
-      "just_right": "Juste parfait",
-      "big": "Grand"
-    },
-    "size": {
-      "height_imperial": "Taille en pieds/pouces",
-      "height_metric": "Taille en cm",
-      "height_imperial_label": "Pieds/pouces",
-      "height_metric_label": "CM"
-    }
-  },
-  "trust_factors": {
-    "default": {
-      "fast_delivery": {
-        "icon": "truck-fast",
-        "heading": "Livraison rapide",
-        "description": "Commandez maintenant et recevez vos achats en un clin d'œil."
-      },
-      "secure_payment": {
-        "icon": "shield-check",
-        "heading": "Paiement sécurisé",
-        "description": "Nos transactions sont protégées pour une expérience d'achat sans souci."
-      },
-      "satisfaction": {
-        "icon": "repeat",
-        "heading": "Achetez en toute confiance",
-        "description": "Nous nous engageons envers votre satisfaction. Si vous n'êtes pas satisfait, nous rembourserons."
-      },
-      "customer_service": {
-        "icon": "headset",
-        "heading": "Service client",
-        "description": "Pour toutes questions ou assistance, nous sommes toujours prêts à vous aider."
-      }
-    },
-    "product": {
-      "secure_payment": {
-        "icon": "lock",
-        "description": "Paiement 100% sécurisé"
-      },
-      "confidence": {
-        "icon": "list-check",
-        "description": "Achetez en toute confiance"
-      },
-      "satisfaction": {
-        "icon": "arrow-rotate-left",
-        "description": "Satisfaction garantie"
-      }
-    }
-  },
-  "store_reviews": {
-    "heading": "Ce que disent nos 1 000+ clients",
-    "global_rating": "Une note de <strong>{{rating}}</strong> sur 5 basée sur <span>{{reviewCount}} avis</span>. Nos derniers avis."
-  },
-  "size_guide_info": {
-    "info_heading": "Trouvez la taille parfaite avec notre guide des tailles facile à utiliser.",
-    "modal_heading": "Guide des tailles"
   },
   "common": {
     "and": "et",
@@ -441,10 +347,6 @@
     "out_of_stock": "Stock épuisé",
     "klarna_message": "4 paiements sans intérêt de "
   },
-  "options": {
-    "color": "Choisissez votre couleur préférée",
-    "size": "Quelle est votre taille parfaite ?"
-  },
   "placeholder": {
     "firstname": "Prénom",
     "lastname": "Nom de famille",
@@ -453,7 +355,8 @@
     "message": "Message",
     "password": "Mot de passe",
     "password_confirmation": "Confirmation du mot de passe",
-    "search": "Rechercher..."
+    "search": "Rechercher...",
+    "send": "Envoyer"
   },
   "validation": {
     "invalid_email": "Cette adresse e-mail est invalide",
@@ -463,31 +366,6 @@
     "field_is_required": "{{field}} est obligatoire",
     "fields_are_required": "{{fields}} sont obligatoires",
     "password_match": "Les mots de passe ne correspondent pas"
-  },
-  "opengraph": {
-    "homepage": {
-      "description": "Faites vos achats maintenant sur {{ storeName }} et économisez gros sur vos achats en ligne",
-      "trust_factors": {
-        "first": "Livraison rapide",
-        "second": "Paiement sécurisé",
-        "third": "Satisfaction garantie",
-        "fourth": "Service client"
-      }
-    }
-  },
-  "shop_review_status": {
-    "redirected": "Redirigé",
-    "verified": "Vérifié"
-  },
-  "newsletter_form": {
-    "field_label": "Votre e-mail",
-    "button_label": "S'abonner",
-    "success": "Inscription réussie ! Du contenu passionnant arrive bientôt.",
-    "error": "Échec de l'inscription. Veuillez réessayer ultérieurement."
-  },
-  "block_shop_rating": {
-    "primary_text": "Excellent",
-    "secondary_text": "avis de"
   },
   "country": {
     "at": "Autriche",

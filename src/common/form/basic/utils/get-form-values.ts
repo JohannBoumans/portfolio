@@ -7,6 +7,7 @@ export function getFormValues<F extends FormValues = FormValues>(
   validationSchema: ValidationSchema<F>,
 ): F {
   let formValues = {} as F;
+  // @ts-ignore
   for (const [key, value] of formData.entries()) {
     if (Object.hasOwn(validationSchema, key)) {
       formValues = {

@@ -3,41 +3,36 @@ import {
   Project,
   Props as ProjectType,
 } from '../../../components/client/project/Project';
+import { getIntl } from '../../../common/intl/utils/get-intl';
+import { Language } from '../../../common/navigation/types/config';
 
-const projects: ProjectType[] = [
-  {
-    title: `Hedda`,
-    image: {
-      src: `/images/hedda/hedda-1.png`,
-      alt: `Hedda website screen capture`,
-    },
-    path: `/projects/hedda`,
-  },
-  {
-    title: `Gleamm`,
-    image: {
-      src: `/images/gleamm/gleamm-1.png`,
-      alt: `Gleamm website screen capture`,
-    },
-    path: `/projects/gleamm`,
-  },
-  {
-    title: `About Green`,
-    image: {
-      src: `/images/aboutgreen/aboutgreen-2.png`,
-      alt: `AboutGreen website screen capture`,
-    },
-    path: `/projects/aboutgreen`,
-  },
-];
+type Props = {
+  language: Language;
+};
 
-export function SixthGridLineFirstComponent() {
+const projectsToDisplay = [`hedda`, `gleamm`, `guilmin`, `aboutgreen`];
+
+export async function SixthGridLineFirstComponent(props: Props) {
+  const { language } = props;
+  const { translate } = await getIntl(language);
+
+  const projects: ProjectType[] = projectsToDisplay.map((slug) => ({
+    title: translate(`project_page.projects.${slug}.name`),
+    image: {
+      src: translate(`project_page.projects.${slug}.images.first`),
+      alt: `${translate(`project_page.projects.${slug}.name`)} website screen capture`,
+    },
+    year: translate(`project_page.projects.${slug}.year`),
+    path: `/projects/${slug}`,
+  }));
+
   return (
     <div>
       {projects.map((project, key) => (
         <Project
           key={key}
           title={project.title}
+          year={project.year}
           image={project.image}
           path={project.path}
         />
@@ -46,15 +41,21 @@ export function SixthGridLineFirstComponent() {
   );
 }
 
-export function SixthGridLineSecondComponent() {
+export async function SixthGridLineSecondComponent(props: Props) {
+  const { language } = props;
+  const { translate } = await getIntl(language);
   return (
     <div>
-      <Text size="2xl" additionalStyle="font-bold mb-2" colorScheme="red">
-        Projets
+      <Text
+        as="h3"
+        size="2xl"
+        additionalStyle="font-bold mb-2"
+        colorScheme="red"
+      >
+        {translate(`home_page.projects.heading`)}
       </Text>
       <Text size="lg" additionalStyle="font-bold">
-        Développeur front-end passionné, je m'engage à relever chaque défi avec
-        persévérance pour créer des solutions qui répondent aux attentes des
+        {translate(`home_page.projects.text`)}
       </Text>
     </div>
   );

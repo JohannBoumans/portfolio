@@ -1,5 +1,6 @@
 import { Text } from '../../../components/server/text/Text';
 import { Link } from '../../../common/navigation/components/Link';
+import { useIntl } from '../../../common/intl/hooks/use-intl';
 
 export function FooterGridLineFirstComponent() {
   return (
@@ -12,16 +13,12 @@ export function FooterGridLineFirstComponent() {
 }
 
 export function FooterGridLineSecondComponent() {
+  const { translate } = useIntl();
   return (
     <ul className="flex items-end justify-between h-full">
       <li>
         <Link to="/about" additionalStyle="text-xl text-white">
-          Á propos
-        </Link>
-      </li>
-      <li>
-        <Link to="/legal-notice" additionalStyle="text-xl text-white">
-          Mentions Légales
+          {translate(`layout.footer.links.first`)}
         </Link>
       </li>
     </ul>

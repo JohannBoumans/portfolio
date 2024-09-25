@@ -11,8 +11,8 @@ export function CursorFollower() {
 
   const mouseX = useMotionValue(-100);
   const mouseY = useMotionValue(-100);
-  // const springConfig = { stiffness: 100, dumping: 50 };
-
+  // const springConfig = { stiffness: 50, dumping: 10, duration: 1000 };
+  //
   // const springX = useSpring(mouseX, springConfig);
   // const springY = useSpring(mouseY, springConfig);
 
@@ -39,7 +39,10 @@ export function CursorFollower() {
         <m.div
           transition={{ type: `spring`, duration: 0.5 }}
           className={clsx(
-            `fixed top-0 left-0 bg-[#ff4912] rounded-full pointer-events-none z-[-1]`,
+            // `fixed top-0 left-0 bg-[#b6fe85] rounded-full pointer-events-none z-[-1]`,
+            `fixed top-0 left-0 bg-[#fe9474] rounded-full pointer-events-none z-[-2]`,
+            // `fixed top-0 left-0 bg-[#ff4912] rounded-full pointer-events-none z-[-1]`,
+            // `fixed top-0 left-0 bg-[rgba(255,215,0,1)] rounded-full pointer-events-none z-[-1]`,
           )}
           style={{
             x,

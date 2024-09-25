@@ -12,7 +12,6 @@ import { usePathname } from 'next/navigation';
 import { useIntlStore } from '../../intl/hooks/use-intl-store';
 import { getHref } from '../utils/get-href';
 import { useRouter } from '../hooks/use-router';
-import { usePageAnimationStore } from '../../../context/page-animation/store/store';
 import { animatePageIn } from '../../../utils/animation';
 
 type Props = {
@@ -38,14 +37,8 @@ export const Link = forwardRef<HTMLAnchorElement, Props>((props, ref) => {
   const { urlLocale } = useIntlStore();
   const pathname = usePathname();
   const router = useRouter();
-  const { state, setIsAnimating } = usePageAnimationStore();
 
-  // useEffect(() => {
-  //   if (state === `exited`) {
-  //     router.push(to);
-  //     setIsAnimating(`initial`);
-  //   }
-  // }, [state]);
+  // const { controls } = usePageAnimationStore();
 
   function getIsActive() {
     if (to === `/`) {
@@ -64,15 +57,7 @@ export const Link = forwardRef<HTMLAnchorElement, Props>((props, ref) => {
   }
 
   function handleAnimatePageIn(to: string) {
-    // animatePageIn();
     animatePageIn(to, router);
-    // animatePage(to, router);
-  }
-
-  function handleLinkAnimation() {
-    if (state === `initial`) {
-      setIsAnimating(`entering`);
-    }
   }
 
   return (
@@ -88,12 +73,8 @@ export const Link = forwardRef<HTMLAnchorElement, Props>((props, ref) => {
       )}
       onClick={(e) => {
         e.preventDefault();
-        // setTimeout(() => {
-        //   router.push(to);
-        // }, 3000);
-        // handleLinkAnimation();
-        handleAnimatePageIn(to);
         onClick?.(e);
+        handleAnimatePageIn(to);
       }}
       draggable={false}
       scroll={false}

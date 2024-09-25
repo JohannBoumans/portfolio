@@ -34,7 +34,8 @@ class Particle {
   }
 
   draw(ctx: CanvasRenderingContext2D) {
-    ctx.fillStyle = `rgba(255, 255, 255, 0.8)`;
+    // ctx.fillStyle = `rgba(255, 255, 255, 0.8)`;
+    ctx.fillStyle = `rgba(255, 215, 0, 1)`;
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
     ctx.closePath();

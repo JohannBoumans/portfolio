@@ -1,424 +1,324 @@
 {
-  "account_pages": {
-    "primary_heading": "My Account",
-    "navigation": {
-      "orders": "Orders",
-      "profile": "Profile",
-      "addresses": "Addresses",
-      "logout": "Log out"
+  "home_page": {
+    "primary_heading": {
+      "first": "Web Developer",
+      "second": "At the service",
+      "third": "Of your ideas"
     },
-    "orders_page": {
-      "primary_heading": "Orders",
-      "primary_order_type": "In progress",
-      "secondary_order_type": "Past",
-      "empty_orders": {
-        "primary_heading": "No orders here",
-        "primary_text": "We've missed you a lot.",
-        "button_label": "Shop All"
+    "about": {
+      "heading": "Who am I?",
+      "text": "Passionate about web development, I am a front-end developer specialized in React and TypeScript. I love creating innovative, performant, and tailor-made solutions for each client's needs. Discover my background and skills in detail.",
+      "button": "About"
+    },
+    "goal": {
+      "heading": {
+        "first": "I help startups or individuals",
+        "second": "to launch and develop",
+        "third": "Their products."
       },
-      "order_line_headings": {
-        "primary_heading": "Reference",
-        "secondary_heading": "Date",
-        "tertiary_heading": "Price",
-        "fourth_heading": "Status"
+      "text": "Specialized in website creation, my goal is to transform your ideas into engaging digital experiences, adapted to all types of devices. From design to deployment, including optimization and maintenance, I accompany you at every step to ensure the success and growth of your digital projects."
+    },
+    "projects": {
+      "heading": "My projects",
+      "text": "Discover an overview of the various projects I have worked on, whether as an employee or as a freelancer, combining creativity and technicality. Each realization is unique and tailor-made to meet the specific needs of my clients."
+    },
+    "services": {
+      "heading": "My services",
+      "button": "Learn more",
+      "showcase-website": {
+        "heading": "Creation of showcase websites",
+        "text": "Development of modern and professional websites to present your business, with a customized design and optimized for online visibility."
       },
-      "order_line": {
-        "primary_text": "Order"
+      "e-commerce": {
+        "heading": "Creation of e-commerce websites",
+        "text": "Design of performant and secure online stores, with product management, order management, and payment solution integration."
       },
-      "order_line_item_headings": {
-        "primary_heading": "Name",
-        "secondary_heading": "Price",
-        "tertiary_heading": "Quantity",
-        "fourth_heading": "Total"
-      },
-      "order_status": {
-        "not_fulfilled": "Not Fulfilled",
-        "partially_fulfilled": "Partially Fulfilled",
-        "fulfilled": "Fulfilled",
-        "partially_shipped": "Partially Shipped",
-        "shipped": "Shipped",
-        "partially_returned": "Partially Returned",
-        "returned": "Returned",
-        "canceled": "Canceled"
+      "webapp": {
+        "heading": "Development of web applications",
+        "text": "Creation of custom-made web applications, performant and adapted to your specific needs. Integration of personalized features for user, data, and interaction management."
       }
     },
-    "profile_page": {
-      "update_profile_form": {
-        "primary_heading": "Profile",
-        "success": "Profile successfully updated !",
-        "errors": {
-          "error": "An error occurred. Please retry."
+    "realisation_steps": {
+      "heading": "What are the different design steps?",
+      "step_one": {
+        "heading": "Needs analysis",
+        "first_feature": "Analysis of your needs and objectives.",
+        "second_feature": "Proposal of solutions adapted to your business (showcase or e-commerce).",
+        "third_feature": "Definition of the specifications."
+      },
+      "step_two": {
+        "heading": "Design and design",
+        "first_feature": "Creation of a personalized mockup to validate the appearance of the website.",
+        "second_feature": "Choice of colors, typography, and layout based on your visual identity."
+      },
+      "step_three": {
+        "heading": "Development and integration",
+        "first_feature": "Development of the website (showcase or e-commerce) using technologies adapted to the client's needs",
+        "second_feature": "Integration of a back-office for simplified and autonomous content management."
+      },
+      "step_four": {
+        "heading": "Launch and maintenance",
+        "first_feature": "Website deployment and performance monitoring.",
+        "second_feature": "Content management training if needed.",
+        "third_feature": "Proposal of maintenance and evolution services for the website based on future needs."
+      }
+    }
+  },
+  "about_page": {
+    "heading": "Who am I?",
+    "text": {
+      "first": "I became passionate about the web and coding since 2017, which led me to follow a web developer training at IFOSUP. After acquiring the basics, I decided to continue my learning by launching my freelance activity. While searching for my first clients, I perfected my skills and took great pleasure in creating solutions that fully met the users' expectations. Later, I had the opportunity to join Hedda Health, a company dedicated to making functional medicine more accessible. There, I developed an e-commerce for the sale of dietary supplements as well as a mobile application to improve users' quality of life through health quizzes and personalized advice.",
+      "second": "As a front-end web developer specialized in React and TypeScript, I have developed strong expertise in the use of modern technologies. I mainly work with Next.js to design performant and scalable applications. I also use Git for version management and have good experience in React Native/Expo for mobile app development. I collaborate easily in a team and strive to develop solid solutions, while ensuring a smooth user experience and maintaining quality code."
+    }
+  },
+  "project_page": {
+    "projects": {
+      "hedda": {
+        "name": "Hedda Health",
+        "year": "2023",
+        "link": {
+          "label": "Voir le site",
+          "path": "https://hedda.health/"
+        },
+        "images": {
+          "first": "/images/hedda/hedda-1.png",
+          "second": "/images/hedda/hedda-2.png",
+          "third": "/images/hedda/hedda-3.png"
+        },
+        "description": {
+          "heading": "Hedda Health – E-commerce & Functional Health",
+          "text": {
+            "first": "During my time at Hedda, I had the opportunity to develop an innovative e-commerce platform using Gatsby and Shopify, focused on functional health. The aim of this project was to make this medical approach more accessible by reducing the often high costs.",
+            "second": "The Hedda website highlighted a mobile app, which I built using React Native and Expo. It allowed users to take quizzes and tests to receive a 'Hedda Health Score'. The long-term goal was to integrate blood tests to cross-reference the results with quiz scores, offering more personalised health tracking.",
+            "third": "Both the mobile app and the website also featured informative articles on the benefits of dietary supplements, along with other topics aimed at improving overall quality of life. These resources helped users better understand how to proactively manage their health.",
+            "fourth": "Additionally, the site offered dietary supplements for purchase, essential for supporting users' well-being based on their results."
+          }
         }
       },
-      "update_password_form": {
-        "primary_heading": "Password",
-        "success": "Password successfully updated !",
-        "errors": {
-          "error": "An error occurred. Please retry.",
-          "password_match": "Passwords doesn't match !"
+      "guilmin": {
+        "name": "Guilmin",
+        "year": "2021",
+        "link": {
+          "label": "View the website",
+          "path": "https://guilmin.be/"
+        },
+        "images": {
+          "first": "/images/guilmin/guilmin-1.png",
+          "second": "/images/guilmin/guilmin-2.png",
+          "third": "/images/guilmin/guilmin-3.png",
+          "fourth": "/images/guilmin/guilmin-4.png",
+          "fifth": "/images/guilmin/guilmin-5.png",
+          "sixth": "/images/guilmin/guilmin-6.png",
+          "seventh": "/images/guilmin/guilmin-7.png"
+        },
+        "description": {
+          "heading": "Guilmin - Showcase website for a Belgian paint factory",
+          "text": {
+            "first": "For the Guilmin project, I developed a showcase website for a Belgian family business active in the paint industry since 1937.",
+            "second": "With rich experience in paint manufacturing, Guilmin stands out for its excellent reputation, built on the quality of its products and its reliability.",
+            "third": "The website was designed in two distinct sections: the shop section, dedicated to product sales, and the factory section, highlighting the manufacturing process.",
+            "fourth": "I used GatsbyJS to ensure fast and smooth performance, and Chakra UI to create a modern and responsive interface, suitable for all types of devices."
+          }
         }
       },
-      "button_submit": "Update"
-    },
-    "addresses_page": {
-      "primary_heading": "Addresses",
-      "empty_addresses": "You don't have any remembered addresses on file.",
-      "create_address_form": {
-        "button_submit": "Add Address",
-        "error": "Error when creating address",
-        "success": "Your address has been successfully added !"
+      "gleamm": {
+        "name": "Gleamm",
+        "year": "2023",
+        "link": {
+          "label": "View the website",
+          "path": "https://gleamm.be/"
+        },
+        "images": {
+          "first": "/images/gleamm/gleamm-1.png",
+          "second": "/images/gleamm/gleamm-2.png",
+          "third": "/images/gleamm/gleamm-3.png",
+          "fourth": "/images/gleamm/gleamm-4.png"
+        },
+        "description": {
+          "heading": "Gleamm - Showcase website for dental whitening",
+          "text": {
+            "first": "For the Gleamm project, I developed a showcase website for a client specialized in dental whitening services.",
+            "second": "The client wanted a simple and elegant interface, allowing visitors to quickly discover the services offered. The one-page website gathers all the important information on a single page for a smooth navigation.",
+            "third": "An appointment booking functionality has also been integrated, allowing customers to easily schedule their visits for dental impressions with the dentist.",
+            "fourth": "I chose to use GatsbyJS, ensuring fast loading times, and Chakra UI for a modern and responsive design, perfectly adapting to all types of devices."
+          }
+        }
       },
-      "update_address_form": {
-        "button_submit": "Update Address",
-        "error": "Error modifying address",
-        "success": "Your address has been successfully modified !"
-      },
-      "delete_address_modal": {
-        "primary_heading": "Are you sure you want to delete the address ?",
-        "error": "Error deleting address",
-        "success": "The address has been successfully deleted !"
+      "aboutgreen": {
+        "name": "About Green",
+        "year": "2019",
+        "link": {
+          "label": "View the website",
+          "path": "https://aboutgreen.be/"
+        },
+        "images": {
+          "first": "/images/aboutgreen/aboutgreen-1.png",
+          "second": "/images/aboutgreen/aboutgreen-2.png",
+          "third": "/images/aboutgreen/aboutgreen-3.png",
+          "fourth": "/images/aboutgreen/aboutgreen-4.png",
+          "fifth": "/images/aboutgreen/aboutgreen-5.png",
+          "sixth": "/images/aboutgreen/aboutgreen-6.png",
+          "seventh": "/images/aboutgreen/aboutgreen-7.png",
+          "eighth": "/images/aboutgreen/aboutgreen-8.png"
+        },
+        "description": {
+          "heading": "AboutGreen - Showcase website for living walls",
+          "text": {
+            "first": "For the AboutGreen project, I created a showcase website for a client based in Luxembourg and Belgium, specialized in the design and installation of living walls.",
+            "second": "The company offers a wide range of custom solutions, from living natural green walls to stabilized and preserved walls, including plants, moss lichens, foliage and even decorative elements like plant-based logos.",
+            "third": "Their expertise also covers projects such as green roofs and vegetation separators, thus offering an innovative approach to integrating nature into urban spaces.",
+            "fourth": "The website design was developed to match the AboutGreen brand image."
+          }
+        }
       }
     }
   },
-  "auth_pages": {
-    "auth_page_container": {
-      "login": {
-        "label": "Don’t have an account?",
-        "link": "Sign Up"
+  "service_page": {
+    "showcase-website": {
+      "heading": "Showcase Websites",
+      "image": "/images/service-showcase.png",
+      "why": {
+        "heading": "Your digital showcase, always open!",
+        "text": {
+          "first": "A showcase website is an essential tool to present your business and attract clients. Like a shop window, it highlights your products, services and know-how, while reflecting the DNA of your brand.",
+          "second": "Accessible 24/7, it offers your prospects the opportunity to discover who you are, at any time. A well-designed, visually appealing and user-friendly website is the key to capturing new clients and strengthening your online presence."
+        }
       },
-      "register": {
-        "label": "Already have an account?",
-        "link": "Sign In"
+      "benefits": {
+        "heading": "The benefits of a showcase website",
+        "first": {
+          "icon": "eye",
+          "heading": "Increased visibility",
+          "text": "Bring your company into the spotlight and allow your potential clients to easily find you online."
+        },
+        "second": {
+          "icon": "user-tie",
+          "heading": "Credibility",
+          "text": "A well-maintained online presence inspires trust and professionalism."
+        },
+        "third": {
+          "icon": "gears",
+          "heading": "Simplicity",
+          "text": "A showcase website is lightweight, easy to maintain, while conveying essential information."
+        },
+        "fourth": {
+          "icon": "gauge-high",
+          "heading": "Fast navigation",
+          "text": "Rapid loading times improve the user experience and increase your chances of converting prospects into clients."
+        },
+        "fifth": {
+          "icon": "mobile",
+          "heading": "Mobile-friendly",
+          "text": "Each web page adapts perfectly to smartphone and tablet screens."
+        },
+        "sixth": {
+          "icon": "mirror",
+          "heading": "Tailored to your image",
+          "text": "It is a reflection of your company and is customized according to your brand identity."
+        }
+      }
+    },
+    "e-commerce": {
+      "heading": "E-commerce",
+      "image": "/images/service-ecom.png",
+      "why": {
+        "heading": "Transform your digital presence into a sales machine",
+        "text": {
+          "first": "An e-commerce website is more than just an online catalog: it is a strategic lever to boost your sales and reach new markets. Accessible 24/7, it allows your clients to shop at any time and from anywhere.",
+          "second": "With detailed product descriptions, photos and videos, it facilitates the decision-making process and offers a secure shopping experience in just a few clicks. It combines the power of a physical store with the advantages of digital: increased visibility, global reach and automated sales. Result: more clients, more sales, and a strengthened online presence for your business."
+        }
       },
-      "recover_password": {
-        "label": "Back to login"
+      "benefits": {
+        "heading": "The benefits of an e-commerce website",
+        "first": {
+          "icon": "ruler",
+          "heading": "Tailored website",
+          "text": "A site that reflects your company, in line with your needs."
+        },
+        "second": {
+          "icon": "calendar",
+          "heading": "24/7 availability",
+          "text": "Your store is accessible at any time, allowing your clients to shop when they want, without time constraints."
+        },
+        "third": {
+          "icon": "list",
+          "heading": "Structured products",
+          "text": "Your products and services are categorized to be easily found by your clients."
+        },
+        "fourth": {
+          "icon": "shield",
+          "heading": "Secure payments",
+          "text": "Integration of reliable payment systems to reassure your clients and provide them with a stress-free shopping experience."
+        },
+        "fifth": {
+          "icon": "chart",
+          "heading": "Easy management",
+          "text": "You can easily manage your catalog, inventory and sales through an intuitive CMS."
+        },
+        "sixth": {
+          "icon": "globe",
+          "heading": "Global reach",
+          "text": "An e-commerce website removes geographic barriers, allowing you to sell your products anywhere, thus expanding your market."
+        }
+      }
+    },
+    "webapp": {
+      "heading": "Web Applications",
+      "image": "/images/service-webapp.png",
+      "why": {
+        "heading": "Web applications: transform your ideas into interactive solutions",
+        "text": {
+          "first": "A web application is much more than a simple website. It allows you to interact directly with your users, offering a smooth and personalized experience, no matter where you are. Whether it's to automate processes, manage data or offer an innovative service, a web application is a powerful tool to improve your efficiency and meet the specific needs of your clients. Accessible from any connected device, it is designed to function in real-time, without the need for installation.",
+          "second": "Your application is developed custom-made, to adapt to your objectives and reflect your identity. By creating a solution in your own image, you not only strengthen your brand image, but you also provide an intuitive and engaging user experience that meets the expectations of your users while optimizing your business."
+        }
       },
-      "reset_password": {
-        "label": "Back to login"
+      "benefits": {
+        "heading": "The benefits of a Web Application",
+        "first": {
+          "icon": "layer",
+          "heading": "Multi-platform accessibility",
+          "text": "Accessible from any device, a web application requires no installation, offering a fluid and continuous user experience on mobile, tablet and desktop."
+        },
+        "second": {
+          "icon": "code",
+          "heading": "Complete customization",
+          "text": "Each application is developed according to your specific needs, allowing you to create a tailor-made solution that is perfectly adapted to your objectives and your audience."
+        },
+        "third": {
+          "icon": "realtime",
+          "heading": "Interactive features",
+          "text": "A web application allows real-time interaction with your users, making the experience dynamic and engaging."
+        },
+        "fourth": {
+          "icon": "time",
+          "heading": "Automation and time saving",
+          "text": "Automate complex processes and save time by simplifying the management of your business or by offering innovative services to your users."
+        },
+        "fifth": {
+          "icon": "graphic-up",
+          "heading": "Scalability",
+          "text": "Developed to grow with your business, a web application can easily evolve to integrate new features as your company expands."
+        },
+        "sixth": {
+          "icon": "upgrade",
+          "heading": "Simplified updates",
+          "text": "Unlike native applications, web application updates are instantly deployed to all users, without the need for additional downloads."
+        }
       }
-    },
-    "register_page": {
-      "register_form": {
-        "primary_heading": "Welcome back!",
-        "primary_text": "We've missed you a lot.",
-        "button_label": "Register"
-      }
-    },
-    "login_page": {
-      "login_form": {
-        "primary_heading": "Login",
-        "button_label": "Login",
-        "forgotten_password": "Forgot your password ?"
-      }
-    },
-    "recover_password_page": {
-      "recover_password_form": {
-        "primary_heading": "Password Forgotten?",
-        "primary_text": "We've missed you a lot.",
-        "button_label": "Send Instructions",
-        "success": "Email successfully send !"
-      }
-    },
-    "reset_password_page": {
-      "reset_password_form": {
-        "primary_heading": "Reset Password",
-        "primary_text": "We've missed you a lot.",
-        "button_label": "Reset Password",
-        "success": "Your password has been reset !",
-        "missing_token": "The token is missing"
-      }
-    },
-    "errors": {
-      "error": "An error occurred. Please retry.",
-      "password_match": "Passwords doesn't match !"
     }
   },
-  "cart": {
-    "primary_heading": "Your basket",
-    "shipping_delivery": "Expected delivery on",
-    "empty_cart": {
-      "primary_heading": "Your basket is empty."
-    },
-    "products_upsells": {
-      "primary_heading": "Frequently bought together."
-    },
-    "checkout_actions": {
-      "sub_total": "Subtotal ",
-      "savings": "Savings",
-      "shipping": "Delivery",
-      "free": "Free",
-      "total": "Total",
-      "confirm_order": "Proceed to checkout -"
-    }
+  "contact_section": {
+    "heading": "Want to collaborate?",
+    "text": "Feel free to contact me to discuss your project or simply exchange ideas. I'm always open to new opportunities!",
+    "success": "Your message has been sent successfully!",
+    "error": "An error has occurred"
   },
-  "checkout_page": {
-    "header": {
-      "back": "Back to store"
-    },
-    "summary": {
-      "primary_heading": "Summary"
-    },
-    "shipping": {
-      "primary_heading": "Shipping",
-      "badge": "Recommended",
-      "delivery": "Estimated delivery on {{ shippingDelay }}",
-      "shipping_free": "FREE",
-      "empty": {
-        "primary_text": "Add item to cart",
-        "secondary_text": "No shipping"
-      }
-    },
-    "contact": {
-      "primary_heading": "Details",
-      "labels": {
-        "email": "Email",
-        "phone": "Phone",
-        "firstname": "Firstname",
-        "lastname": "Lastname",
-        "address": "Address",
-        "city": "City",
-        "province": "Province",
-        "zip": "Zip",
-        "country": "Country"
-      }
-    },
-    "payments": {
-      "primary_heading": "Payment",
-      "empty": {
-        "primary_text": "You're nearly there! Kindly ensure all your checkout details are filled in. This will unveil your available payment options."
-      }
-    },
-    "upsell": {
-      "primary_heading": "Recommended for you"
-    },
-    "discount": {
-      "add_discount": "Add discount code",
-      "label": "Discount Code",
-      "button_submit": "Apply Discount"
-    },
-    "total": {
-      "original_price": "Original Price",
-      "saving": "Your saving",
-      "shipping": "Shipping",
-      "sub_total": "Subtotal",
-      "total": "Total"
-    },
-    "submit": {
-      "label": "Complete My Order"
-    },
-    "trust_factors": {
-      "returns": {
-        "icon": "arrow-rotate-left",
-        "heading": "Easy Return"
-      },
-      "satisfaction": {
-        "icon": "trophy",
-        "heading": "Satisfaction Guaranteed"
-      },
-      "secure_payment": {
-        "icon": "lock",
-        "heading": "Secure Payment"
-      }
-    },
-    "error": {
-      "missing_contact_info": "Some contact information are missing. Please verify and complete all required fields.",
-      "missing_payment_info": "Some payment information are missing. Please verify and complete all required fields.",
-      "payment_failed": "Unable to complete payment. Recheck details or switch payment method.",
-      "unknown": "Unexpected error encountered. Please try again."
-    },
-    "overlay": {
-      "wait": "Please wait...",
-      "message": "Your order is processing. Do not press back or refresh until your\norder is complete."
-    }
-  },
-  "checkout_confirmation_page": {
-    "header": {
-      "heading": "Hooray! Your order is zooming our way!",
-      "description": "Thank you for your order! We want to confirm that we have received it and an email detailing your purchase has been sent to <span>{{ emailAddress }}</span>"
-    },
-    "details": {
-      "heading": "Order Details",
-      "total": "Total amount",
-      "order_date": "Order date"
-    },
-    "shipping": {
-      "heading": "Shipping Details"
-    },
-    "estimated_delivery_date_label": "Estimated Delivery",
-    "button": "Continue shopping"
-  },
-  "checkout_error_page": {
-    "heading": "Oops, we had a hiccup!",
-    "content": "It seems that there was an issue with your order. We invite you to try again. If this problem persists, don't panic, send us a short message at {{ emailAddress }}.",
-    "button": "Give it Another Go"
-  },
-  "contact_form": {
-    "button_label": "Send",
-    "success": "Our team will process your request shortly. Thank you for your patience and we look forward to speaking with you.",
-    "error": "Error occurred. Please retry."
-  },
-  "cookies_banner": {
-    "header": {
-      "primary_heading": "Manage my cookies"
-    },
+  "layout": {
     "footer": {
-      "accept_all": "I accept all",
-      "button_choose": "I choose",
-      "button_deny": "No thanks"
-    },
-    "consent_banner": {
-      "intro": "We would like to use cookies to enhance your experience during your visit to our website.",
-      "engagement_label": "Our privacy commitment"
-    },
-    "consent_choice": {
-      "check_necessary": "Necessary cookies",
-      "check_necessary_text": "We use these cookies to ensure the proper functioning of our website.",
-      "check_performances": "Performance cookies",
-      "check_performances_text": "Nous utilisons ces cookies pour assurer le bon fonctionnement de notre site web.",
-      "check_analysis": "Analytics cookies",
-      "check_analysis_text": "We use these cookies to provide you with personalized ads on our website."
-    }
-  },
-  "dynamic_page_titles": {
-    "first_title": "\uD83D\uDCA5 DON'T MISS OUR DAILY OFFERS",
-    "second_title": "\uD83C\uDF89 EXCLUSIVE WEEKLY PROMOTIONS"
-  },
-  "express_configurator": {
-    "details": {
-      "reviews": "based on {{reviewCount}} reviews",
-      "error": "Please select your product options to continue.",
-      "success": "Product successfully added to cart!"
-    }
-  },
-  "footer": {
-    "title_categories": "Categories",
-    "title_order": "Your Order",
-    "legal_privacy": "Privacy",
-    "legal_sales": "Sales and Refunds",
-    "legal_shipping": "Shipping and Returns",
-    "legal_terms_of_sales": "Terms of Sale",
-    "legal_notice": "Legal Notice"
-  },
-  "help_page": {
-    "heading": "Need Help? We're Here for You",
-    "help_questions": {
-      "categories": {
-        "heading": "Browse by category"
-      }
-    },
-    "help_contact_form": {
-      "heading": "Your feedback helps us improve",
-      "text": "We’d love to hear from you. Send us a message, and we’ll get back to\n you in a resonable timeframe."
-    },
-    "help_contact": {
-      "heading": "More Ways to\nReach Us",
-      "text": "No worries, we've got you covered.\nWe understand that sometimes you need a little extra.",
-      "email": {
-        "heading": "Email us"
-      },
-      "chat": {
-        "heading": "Live Chat",
-        "text": "Our Support Team"
+      "links": {
+        "first": "About"
       }
     }
-  },
-  "nav": {
-    "about": "Our Story",
-    "help": "Help & Contact"
-  },
-  "order_links": {
-    "shipping": "Shipping",
-    "returns": "Returns",
-    "payments": "Payments",
-    "other": "Other"
-  },
-  "products_page": {
-    "heading": "Our products"
-  },
-  "product_page": {
-    "loading": {
-      "title": "Hang tight...",
-      "content": "Your tailored experience is currently under construction. A bit of patience, it's on its way!"
-    },
-    "add_to_cart_banner": {
-      "delivery_date": "Order today and get it delivered on "
-    },
-    "product_hero_overview_header": {
-      "best_seller": "Best-Seller",
-      "shipping_free": "Free Shipping",
-      "earn": "SAVE",
-      "review": "based on {{reviewCount}} reviews"
-    },
-    "product_hero_overview_footer": {
-      "delivery_date": "Order today and get it delivered on "
-    },
-    "recently_viewed_products_carousel": {
-      "heading": "Recently viewed products"
-    },
-    "reviews": {
-      "based_on": "based on {{reviewsCount}} reviews",
-      "item_fit": "How did the item fit?",
-      "recommend_product": "I recommend this product",
-      "recommend_product_percentage": "{{percentage}}% would recommend this product",
-      "purchased_size": "Purchased Size",
-      "usual_size": "Usual Size",
-      "write_review": "Write a review",
-      "small": "Small",
-      "just_right": "Just Right",
-      "big": "Big"
-    },
-    "size": {
-      "height_imperial": "Height in feet/inches",
-      "height_metric": "Height in cm",
-      "height_imperial_label": "Feet/inches",
-      "height_metric_label": "CM"
-    }
-  },
-  "trust_factors": {
-    "default": {
-      "fast_delivery": {
-        "icon": "truck-fast",
-        "heading": "Fast delivery",
-        "description": "Order now and receive your purchases in the blink of an eye."
-      },
-      "secure_payment": {
-        "icon": "shield-check",
-        "heading": "Secure payment",
-        "description": "Our transactions are protected for a worry-free shopping experience."
-      },
-      "satisfaction": {
-        "icon": "repeat",
-        "heading": "Buy with confidence",
-        "description": "We are committed to your satisfaction. If you are not happy, we will refund."
-      },
-      "customer_service": {
-        "icon": "headset",
-        "heading": "Customer service",
-        "description": "For any questions or assistance, we are always ready to assist you."
-      }
-    },
-    "product": {
-      "secure_payment": {
-        "icon": "lock",
-        "description": "100% Secure Payment"
-      },
-      "confidence": {
-        "icon": "list-check",
-        "description": "Shop with Confidence"
-      },
-      "satisfaction": {
-        "icon": "arrow-rotate-left",
-        "description": "Satisfaction Guaranteed"
-      }
-    }
-  },
-  "store_reviews": {
-    "heading": "What our 1k+ customers have to say",
-    "global_rating": "A rating of <strong>{{rating}}</strong> out of 5 based on <span>{{reviewCount}} reviews</span>. Our latest reviews."
-  },
-  "size_guide_info": {
-    "info_heading": "Find the perfect fit with our\neasy-to-use size guide.",
-    "modal_heading": "Size guide"
   },
   "common": {
     "and": "and",
@@ -441,10 +341,6 @@
     "out_of_stock": "Out of Stock",
     "klarna_message": "4 interest-free installments of "
   },
-  "options": {
-    "color": "Choose your favorite color",
-    "size": "What’s your perfect fit?"
-  },
   "placeholder": {
     "firstname": "Firstname",
     "lastname": "Lastname",
@@ -453,7 +349,8 @@
     "message": "Message",
     "password": "Password",
     "password_confirmation": "Password confirmation",
-    "search": "Type anything..."
+    "search": "Type anything...",
+    "send": "Send"
   },
   "validation": {
     "invalid_email": "This email address is invalid",
@@ -463,31 +360,6 @@
     "field_is_required": "{{field}} is required",
     "fields_are_required": "{{fields}} are required",
     "password_match": "Passwords do not match"
-  },
-  "opengraph": {
-    "homepage": {
-      "description": "Shop now on {{ storeName }} and save big on your online purchases",
-      "trust_factors": {
-        "first": "Fast delivery",
-        "second": "Secure payment",
-        "third": "Satisfaction guaranteed",
-        "fourth": "Customer service"
-      }
-    }
-  },
-  "shop_review_status": {
-    "redirected": "Redirected",
-    "verified": "Verified"
-  },
-  "newsletter_form": {
-    "field_label": "Your email",
-    "button_label": "Subscribe",
-    "success": "Subscribed successfully! Exciting content coming your way.",
-    "error": "Subscription failed. Please try again later."
-  },
-  "block_shop_rating": {
-    "primary_text": "Excellent",
-    "secondary_text": "review of"
   },
   "country": {
     "at": "Austria",
