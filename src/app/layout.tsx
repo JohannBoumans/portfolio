@@ -7,6 +7,7 @@ import { mapLocaleToLanguage } from '../common/intl/utils/map-locale-to-language
 import { RootLayout } from '../components/server/root-layout/RootLayout';
 import './globals.css';
 import { PageProps } from '../common/navigation/types/page';
+import { availableLocale } from '../common/navigation/types/config';
 import { Providers } from './providers';
 
 // initLogging();
@@ -23,9 +24,9 @@ export const viewport: Viewport = {
   userScalable: false,
 };
 
-// export async function generateStaticParams() {
-//   return availableLocale.map((locale) => ({ locale: locale.toLowerCase() }));
-// }
+export async function generateStaticParams() {
+  return availableLocale.map((locale) => ({ locale: locale.toLowerCase() }));
+}
 
 type Props = PropsWithChildren & PageProps;
 
