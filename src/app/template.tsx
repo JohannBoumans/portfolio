@@ -11,5 +11,5 @@ export default function Template({ children }: { children: ReactNode }) {
     animatePageOut();
   }, [pathname]);
 
-  return <div>{children}</div>;
+  return <>{children}</>;
 }
