@@ -1,4 +1,4 @@
-import { PropsWithChildren, Suspense } from 'react';
+import { PropsWithChildren } from 'react';
 
 export const runtime = `edge`;
 
@@ -6,5 +6,5 @@ export const runtime = `edge`;
 
 export default function Layout(props: PropsWithChildren) {
   const { children } = props;
-  return <Suspense>{children}</Suspense>;
+  return <>{children}</>;
 }
