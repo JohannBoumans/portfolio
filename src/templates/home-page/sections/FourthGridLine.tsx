@@ -29,5 +29,10 @@ export async function FourthGridLineFirstComponent(props: Props) {
 }
 
 export function FourthGridLineSecondComponent() {
-  return <TopographySvg additionalStyle="w-[3400px] h-[3400px]" />;
+  return (
+    <TopographySvg
+      variant="three"
+      additionalStyle="!w-[3200px] !h-[3200px] translate-x-[-400px]"
+    />
+  );
 }

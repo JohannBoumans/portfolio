@@ -7,7 +7,7 @@ import { InputProps } from '../_shared/props';
 import { inputStyle, invalidClassName } from '../_shared/style';
 import { AutoCompleteType, InputType } from '../_shared/types';
 import { InputContainer } from '../input-container/InputContainer';
-import { AdditionalStyle } from '../../../types/additional-style';
+import { AdditionalStyle } from '../../../../style/types/additional-style';
 import { InputVariant } from './_/types';
 
 type Props = InputProps<HTMLInputElement> &

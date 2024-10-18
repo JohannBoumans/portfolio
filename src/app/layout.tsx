@@ -91,6 +91,7 @@ export default function Layout(props: Props) {
         lang={language}
         style={{ scrollBehavior: `smooth`, scrollPaddingTop: 0 }}
         suppressHydrationWarning
+        className="dark"
       >
         <body
           className={clsx(

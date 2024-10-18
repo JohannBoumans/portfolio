@@ -59,26 +59,29 @@ export default async function HomePage(props: TemplatePageProps) {
         firstComponent={<SecondGridLineFirstComponent language={language} />}
         secondComponent={<SecondGridLineSecondComponent />}
         additionalStyle={{
-          second: `!p-0 !overflow-hidden relative cell-transparent`,
+          cellContainer: `!grid grid-cols-1`,
+          second: `!p-0 !overflow-hidden relative cell-transparent min-h-[120px]`,
         }}
       />
       <GridLine
         firstComponent={<ThirdGridLineFirstComponent />}
         secondComponent={<ThirdGridLineSecondComponent language={language} />}
         additionalStyle={{
-          first: `!p-0 !overflow-hidden relative cell-transparent`,
+          cellContainer: `!flex-col-reverse`,
+          first: `!p-0 !overflow-hidden relative cell-transparent min-h-[120px]`,
         }}
       />
       <GridLine
         firstComponent={<FourthGridLineFirstComponent language={language} />}
         secondComponent={<FourthGridLineSecondComponent />}
         additionalStyle={{
-          second: `!p-0 !overflow-hidden relative cell-transparent`,
+          second: `!p-0 !overflow-hidden relative cell-transparent min-h-[120px]`,
         }}
       />
       <GridLine
         firstComponent={<SixthGridLineFirstComponent language={language} />}
         secondComponent={<SixthGridLineSecondComponent language={language} />}
+        additionalStyle={{ first: `order-1 lg:order-2` }}
       />
       <GridLine
         isInverted
@@ -87,8 +90,8 @@ export default async function HomePage(props: TemplatePageProps) {
         }
         secondComponent={<ServicesTitleGridLineSecondComponent />}
         additionalStyle={{
-          first: `min-h-[176px] flex items-center`,
-          second: `!p-0 overflow-hidden relative cell-transparent`,
+          first: `min-h-[176px] flex items-center order-2 lg:order-1`,
+          second: `!p-0 overflow-hidden relative cell-transparent min-h-[120px]`,
         }}
       />
       <GridLine
@@ -105,7 +108,7 @@ export default async function HomePage(props: TemplatePageProps) {
           <RealisationStepGridLineFirstComponent language={language} />
         }
         additionalStyle={{
-          first: `!p-0 overflow-hidden relative cell-transparent`,
+          first: `!p-0 overflow-hidden relative cell-transparent min-h-[120px]`,
         }}
       />
       <GridLine

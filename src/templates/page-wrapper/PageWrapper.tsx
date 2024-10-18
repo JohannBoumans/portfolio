@@ -3,8 +3,8 @@
 import { ReactNode } from 'react';
 import { Language } from '../../common/navigation/types/config';
 import { GridLine } from '../../components/client/grid-line/GridLine';
-import { ContactForm } from '../home-page/sections/form/ContactForm';
-import { ContactHeading } from '../home-page/sections/form/ContactHeading';
+import { ContactForm } from './components/form/ContactForm';
+import { ContactHeading } from './components/form/ContactHeading';
 import {
   HeaderGridLineFirstComponent,
   HeaderGridLineThirdComponent,
