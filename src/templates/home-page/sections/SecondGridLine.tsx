@@ -55,5 +55,7 @@ export function SecondGridLineFirstComponent(props: Props) {
 }
 
 export function SecondGridLineSecondComponent() {
-  return <TopographySvg />;
+  return (
+    <TopographySvg variant="three" additionalStyle="!w-[3800px] !h-[3800px]" />
+  );
 }

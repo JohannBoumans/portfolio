@@ -16,11 +16,11 @@ export const ToastMessage = (props: Props) => {
   const icon = useMemo(() => {
     switch (type) {
       case `success`:
-        return <Icon icon="check-circle" size="1x" color="white" />;
+        return <Icon icon="check-circle" color="white" />;
       case `error`:
-        return <Icon icon="triangle-exclamation" size="1x" color="white" />;
+        return <Icon icon="triangle-exclamation" color="white" />;
       default:
-        return <Icon icon="check-circle" size="1x" color="white" />;
+        return <Icon icon="check-circle" color="white" />;
     }
   }, [type]);
 
@@ -51,7 +51,7 @@ export const ToastMessage = (props: Props) => {
         onClick={onClose}
         className="flex items-center justify-center rounded-sm p-1 duration-300 hover:bg-black/[.1]"
       >
-        <Icon additionalStyle="icon-sm" />
+        <Icon icon="xmark" size="xs" />
       </button>
     </m.div>
   );

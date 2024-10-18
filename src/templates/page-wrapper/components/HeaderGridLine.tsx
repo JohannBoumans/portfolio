@@ -4,11 +4,16 @@ import { LocaleSwitcher } from '../../../components/client/locale-switcher/Local
 export function HeaderGridLineFirstComponent() {
   return (
     <Link to="/" additionalStyle="text-xl text-white">
-      Johann Bms.
+      J. Bms.
     </Link>
   );
 }
 
 export function HeaderGridLineThirdComponent() {
-  return <LocaleSwitcher />;
+  return (
+    <div className="flex justify-between items-center">
+      <LocaleSwitcher />
+      {/*<ThemeSwitcher />*/}
+    </div>
+  );
 }

@@ -32,9 +32,14 @@ export function GridLine(props: Props) {
         additionalStyle?.root,
       )}
     >
-      <GridCell additionalStyle="min-h-full max-w-[50px] 2xl:max-w-full w-full" />
+      <GridCell additionalStyle="min-h-full max-w-[16px] md:max-w-[50px] 2xl:max-w-full w-full" />
       <div className="w-full 2xl:min-w-[1280px] h-full">
-        <div className="h-full grid grid-cols-3 overflow-hidden">
+        <div
+          className={clsx(
+            `h-full flex flex-col lg:grid lg:grid-cols-3 overflow-hidden`,
+            additionalStyle?.cellContainer,
+          )}
+        >
           <GridCell
             additionalStyle={clsx(
               mapIsInvertedToColumnSize(
@@ -66,7 +71,7 @@ export function GridLine(props: Props) {
           )}
         </div>
       </div>
-      <GridCell additionalStyle="min-h-full max-w-[50px] 2xl:max-w-full w-full" />
+      <GridCell additionalStyle="min-h-full max-w-[16px] md:max-w-[50px] 2xl:max-w-full w-full" />
     </div>
   );
 }
@@ -88,3 +93,21 @@ function mapIsInvertedToColumnSize(
   }
   return `col-span-2`;
 }
+
+// function mapIsInvertedToColumnSize(
+//   isInverted: boolean,
+//   secondComponent: ReactNode,
+//   hasThreeColumns: boolean,
+// ) {
+//   if (!secondComponent) {
+//     return `col-span-3`;
+//   }
+//   if (hasThreeColumns) {
+//     // return `col-span-1 border-r-[1px] border-white/[0.3] bg-clip-padding`;
+//     return `col-span-1`;
+//   }
+//   if (isInverted) {
+//     return `col-span-1`;
+//   }
+//   return `col-span-2`;
+// }

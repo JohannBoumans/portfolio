@@ -25,6 +25,9 @@ import Time from '../../../../public/svg/time-svgrepo-com.svg';
 import Realtime from '../../../../public/svg/clock-realtime.svg';
 import GraphicUp from '../../../../public/svg/graphic-up.svg';
 import Upgrade from '../../../../public/svg/upgrade.svg';
+import Xmark from '../../../../public/svg/xmark-solid.svg';
+import CheckCircle from '../../../../public/svg/circle-check-regular.svg';
+import TriangleExclamation from '../../../../public/svg/triangle-exclamation-solid.svg';
 
 import { Sizes } from './_/types';
 
@@ -54,7 +57,10 @@ export type Icons =
   | `time`
   | `realtime`
   | `graphic-up`
-  | `upgrade`;
+  | `upgrade`
+  | `check-circle`
+  | `xmark`
+  | `triangle-exclamation`;
 
 type Props = {
   additionalStyle?: string;
@@ -139,6 +145,12 @@ function mapSvgToIcon(icon: Icons) {
       return <Upgrade />;
     case `arrow-right`:
       return <ArrowRight />;
+    case `check-circle`:
+      return <CheckCircle />;
+    case `triangle-exclamation`:
+      return <TriangleExclamation />;
+    case `xmark`:
+      return <Xmark />;
     default:
       return <GitSvg />;
   }
