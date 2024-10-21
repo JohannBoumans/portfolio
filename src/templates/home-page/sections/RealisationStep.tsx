@@ -20,5 +20,5 @@ export async function RealisationStepGridLineFirstComponent(props: Props) {
 }
 
 export function RealisationStepGridLineSecondComponent() {
-  return <TopographySvg additionalStyle="w-[4200px] h-[4200px]" />;
+  return <TopographySvg additionalStyle="!w-[2500px] !h-[2500px]" />;
 }

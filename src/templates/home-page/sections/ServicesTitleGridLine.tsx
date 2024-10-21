@@ -21,5 +21,7 @@ export async function ServicesTitleGridLineFirstComponent(props: Props) {
 
 export function ServicesTitleGridLineSecondComponent() {
   // return <ParticleAnimation height={176} />;
-  return <TopographySvg additionalStyle="w-[2200px] h-[2200px]" />;
+  return (
+    <TopographySvg variant="three" additionalStyle="!w-[2600px] !h-[2600px]" />
+  );
 }

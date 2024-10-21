@@ -37,7 +37,8 @@ export default async function AboutPage(props: TemplatePageProps) {
           <AboutSecondGridLineSecondComponent language={language} />
         }
         additionalStyle={{
-          first: `!p-0 !pr-1 overflow-hidden relative cell-transparent`,
+          cellContainer: `!flex-col-reverse`,
+          first: `!p-0 !pr-1 overflow-hidden relative cell-transparent min-h-[200px]`,
         }}
       />
       <GridLine
@@ -46,7 +47,7 @@ export default async function AboutPage(props: TemplatePageProps) {
           <AboutThirdGridLineFirstComponent language={language} />
         }
         secondComponent={<AboutThirdGridLineSecondComponent />}
-        additionalStyle={{ second: `min-h-[500px]` }}
+        additionalStyle={{ second: `hidden md:block min-h-[500px]` }}
       />
       <GridLine
         firstComponent={<AboutFourthGridLineSecondComponent />}

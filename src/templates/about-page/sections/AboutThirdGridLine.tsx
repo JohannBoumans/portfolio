@@ -53,7 +53,7 @@ export function AboutThirdGridLineSecondComponent() {
   return (
     <div
       ref={containerRef}
-      className="w-full h-full flex justify-center items-center relative"
+      className="w-full h-[500px] lg:h-full hidden md:flex justify-center items-center relative"
     >
       <MovingBlock
         xOffset={mousePosition.x * 0.08}

@@ -68,7 +68,7 @@ export default async function HomePage(props: TemplatePageProps) {
         secondComponent={<ThirdGridLineSecondComponent language={language} />}
         additionalStyle={{
           cellContainer: `!flex-col-reverse`,
-          first: `!p-0 !overflow-hidden relative cell-transparent min-h-[120px]`,
+          first: `!p-0 !overflow-hidden relative cell-transparent`,
         }}
       />
       <GridLine

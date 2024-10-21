@@ -1,12 +1,12 @@
 import { Text } from '../../../components/server/text/Text';
 import { Button } from '../../../components/server/button/Button';
 import { Link } from '../../../common/navigation/components/Link';
-import { TopographySvg } from '../../../components/client/topography-svg/TopographySvg';
 import { Language } from '../../../common/navigation/types/config';
 import { getIntl } from '../../../common/intl/utils/get-intl';
+import { TopographySvg } from '../../../components/client/topography-svg/TopographySvg';
 
 export function ThirdGridLineFirstComponent() {
-  return <TopographySvg additionalStyle="!w-[3600px] !h-[3600px]" />;
+  return <TopographySvg additionalStyle="!w-[2600px] !h-[2600px]" />;
 }
 
 type Props = {

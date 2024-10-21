@@ -14,7 +14,7 @@ export async function ProjectFirstGridLineFirstComponent(props: Props) {
   const { language, slug } = props;
   const { translate } = await getIntl(language);
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center">
+    <div className="w-full h-full flex flex-col justify-center items-center pb-2">
       <Text as="h1" size="5xl" additionalStyle="font-bold mb-2">
         {translate(`project_page.projects.${slug}.name`)}
       </Text>
@@ -28,5 +28,7 @@ export async function ProjectFirstGridLineFirstComponent(props: Props) {
 }
 
 export function ProjectFirstGridLineSecondComponent() {
-  return <TopographySvg additionalStyle="w-[1800px] h-[1800px]" />;
+  return (
+    <TopographySvg variant="three" additionalStyle="!w-[2600px] !h-[2600px]" />
+  );
 }

@@ -34,7 +34,8 @@ export default async function ServicePage(props: TemplatePageProps) {
           />
         }
         additionalStyle={{
-          first: `!p-0 overflow-hidden relative cell-transparent`,
+          first: `!p-0 overflow-hidden relative cell-transparent min-h-[250px]`,
+          second: `hidden lg:flex`,
         }}
       />
       <GridLine

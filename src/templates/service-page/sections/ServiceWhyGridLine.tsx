@@ -32,5 +32,7 @@ export async function ServiceWhyGridLineFirstComponent(props: Props) {
 }
 
 export function ServiceWhyGridLineSecondComponent() {
-  return <TopographySvg additionalStyle="w-[2200px] h-[2200px] pr-1" />;
+  return (
+    <TopographySvg variant="two" additionalStyle="!w-[2800px] !h-[2800px]" />
+  );
 }

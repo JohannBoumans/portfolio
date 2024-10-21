@@ -17,5 +17,7 @@ export function AboutFourthGridLineFirstComponent() {
 }
 
 export function AboutFourthGridLineSecondComponent() {
-  return <TopographySvg additionalStyle="w-[2400px] h-[2400px]" />;
+  return (
+    <TopographySvg variant="three" additionalStyle="!w-[3400px] !h-[3400px]" />
+  );
 }

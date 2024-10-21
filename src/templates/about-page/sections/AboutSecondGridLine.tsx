@@ -4,7 +4,7 @@ import { Language } from '../../../common/navigation/types/config';
 import { getIntl } from '../../../common/intl/utils/get-intl';
 
 export function AboutSecondGridLineFirstComponent() {
-  return <TopographySvg additionalStyle="w-[3400px] h-[3400px]" />;
+  return <TopographySvg additionalStyle="!w-[2600px] !h-[2600px]" />;
 }
 
 type Props = {

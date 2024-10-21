@@ -21,41 +21,24 @@ export function SecondGridLineFirstComponent(props: Props) {
     100,
     10,
   );
-  const words = [
-    translate(`home_page.primary_heading.first`),
-    translate(`home_page.primary_heading.second`),
-  ];
-  const secondWords = [translate(`home_page.primary_heading.second`)];
   return (
     <div>
       <Text as="h1" size="6xl" additionalStyle="font-bold">
         {translate(`home_page.primary_heading.first`)}
       </Text>
-      <Text as="h1" size="6xl" additionalStyle="font-bold">
+      <Text
+        as="h1"
+        // size="6xl"
+        additionalStyle="font-bold !text-3xl sm:!text-4xl lg:!text-6xl"
+      >
         {text}
       </Text>
-      {/*<TypingWord*/}
-      {/*  words={words}*/}
-      {/*  colors={[`white`, `white`]}*/}
-      {/*  additionalStyle="text-7xl font-bold"*/}
-      {/*/>*/}
-      {/*<TypingWord*/}
-      {/*  words={secondWords}*/}
-      {/*  colors={[`white`]}*/}
-      {/*  additionalStyle="text-7xl font-bold"*/}
-      {/*/>*/}
-      {/*<Text as="h1" size="7xl" additionalStyle="font-bold">*/}
-      {/*  {translate(`home_page.primary_heading.first`)}*/}
-      {/*</Text>*/}
-      {/*<Text as="h1" size="7xl" additionalStyle="font-bold">*/}
-      {/*  {translate(`home_page.primary_heading.first`)}*/}
-      {/*</Text>*/}
     </div>
   );
 }
 
 export function SecondGridLineSecondComponent() {
   return (
-    <TopographySvg variant="three" additionalStyle="!w-[3800px] !h-[3800px]" />
+    <TopographySvg variant="two" additionalStyle="!w-[2800px] !h-[2800px]" />
   );
 }
