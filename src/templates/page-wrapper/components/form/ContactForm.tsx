@@ -14,6 +14,9 @@ export function ContactForm() {
 
   async function onSubmit(formValues: ContactFormValues) {
     const { emailAddress, message } = formValues;
+    success(translate(`contact_section.success`));
+    return;
+    error(translate(`contact_section.error`));
     axios({
       method: `POST`,
       url: process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT!,

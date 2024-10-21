@@ -20,7 +20,9 @@ export async function AboutFirstGridLineFirstComponent(props: Props) {
 }
 
 export function AboutFirstGridLineSecondComponent() {
-  return <TopographySvg additionalStyle="w-[2800px] h-[2800px] pr-1" />;
+  return (
+    <TopographySvg variant="two" additionalStyle="!w-[2800px] !h-[2800px]" />
+  );
   // return (
   //   <div className="relative">
   //     <Image

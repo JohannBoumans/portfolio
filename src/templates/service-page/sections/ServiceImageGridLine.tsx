@@ -9,7 +9,9 @@ type Props = {
 };
 
 export function ServiceImageGridLineFirstComponent() {
-  return <TopographySvg additionalStyle="w-[2200px] h-[2200px] pr-1" />;
+  return (
+    <TopographySvg variant="three" additionalStyle="!w-[2600px] !h-[2600px]" />
+  );
 }
 
 export async function ServiceImageGridLineSecondComponent(props: Props) {

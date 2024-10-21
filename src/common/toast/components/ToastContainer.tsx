@@ -12,7 +12,7 @@ export function ToastContainer(props: Props) {
 
   return (
     <m.div
-      className="fixed right-10 top-10 z-[999] flex flex-col items-center"
+      className="fixed right-4 top-4 md:right-10 md:top-10 z-[999] flex flex-col items-center"
       layout
     >
       <AnimatePresence>

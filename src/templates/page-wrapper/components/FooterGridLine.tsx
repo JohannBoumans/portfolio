@@ -27,7 +27,7 @@ export function FooterGridLineSecondComponent() {
 
 export function FooterGridLineThirdComponent() {
   return (
-    <div className="w-full h-full flex justify-end items-end">
+    <div className="w-full h-full flex items-end">
       <Text size="xl">© {new Date().getFullYear()}</Text>
     </div>
   );

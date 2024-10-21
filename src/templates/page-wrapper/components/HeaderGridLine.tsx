@@ -4,7 +4,7 @@ import { LocaleSwitcher } from '../../../components/client/locale-switcher/Local
 export function HeaderGridLineFirstComponent() {
   return (
     <Link to="/" additionalStyle="text-xl text-white">
-      J. Bms.
+      Johann Bms.
     </Link>
   );
 }

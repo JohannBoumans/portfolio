@@ -20,7 +20,7 @@ export default async function ProjectsPage(props: TemplatePageProps) {
         }
         secondComponent={<ProjectFirstGridLineSecondComponent />}
         additionalStyle={{
-          second: `!p-0 overflow-hidden relative cell-transparent`,
+          second: `!p-0 overflow-hidden relative cell-transparent min-h-[150px]`,
         }}
       />
       <GridLine
